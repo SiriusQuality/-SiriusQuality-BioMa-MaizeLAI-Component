@@ -3,7 +3,7 @@
  //Author:Loic Manceau loic.manceau@inra.fr
  //Institution:INRA
  //Author of revision: 
- //Date first release:6/5/2019
+ //Date first release:6/7/2019
  //Date of revision:
 
 using System;
@@ -99,36 +99,38 @@ namespace SiriusQualityMaizeLAI.Strategies
 				 _parameters0_0.Add(v25);
 				VarInfo v26 = new CompositeStrategyVarInfo(_calcstartexptt,"btip");
 				 _parameters0_0.Add(v26);
-				VarInfo v27 = new CompositeStrategyVarInfo(_calcstopenlargett,"lagStopWidthExpand");
+				VarInfo v27 = new CompositeStrategyVarInfo(_calcstartexptt,"Dse");
 				 _parameters0_0.Add(v27);
-				VarInfo v28 = new CompositeStrategyVarInfo(_calctiptt,"Dse");
+				VarInfo v28 = new CompositeStrategyVarInfo(_calcstopenlargett,"lagStopWidthExpand");
 				 _parameters0_0.Add(v28);
-				VarInfo v29 = new CompositeStrategyVarInfo(_calctiptt,"atip");
+				VarInfo v29 = new CompositeStrategyVarInfo(_calctiptt,"Dse");
 				 _parameters0_0.Add(v29);
-				VarInfo v30 = new CompositeStrategyVarInfo(_calctiptt,"btip");
+				VarInfo v30 = new CompositeStrategyVarInfo(_calctiptt,"atip");
 				 _parameters0_0.Add(v30);
-				VarInfo v31 = new CompositeStrategyVarInfo(_deltalaimaize,"plantDensity");
+				VarInfo v31 = new CompositeStrategyVarInfo(_calctiptt,"btip");
 				 _parameters0_0.Add(v31);
-				VarInfo v32 = new CompositeStrategyVarInfo(_deltalaimaize,"SensiRad");
+				VarInfo v32 = new CompositeStrategyVarInfo(_deltalaimaize,"plantDensity");
 				 _parameters0_0.Add(v32);
-				VarInfo v33 = new CompositeStrategyVarInfo(_deltalaimaize,"radBase");
+				VarInfo v33 = new CompositeStrategyVarInfo(_deltalaimaize,"SensiRad");
 				 _parameters0_0.Add(v33);
-				VarInfo v34 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"LowerFPAWexp");
+				VarInfo v34 = new CompositeStrategyVarInfo(_deltalaimaize,"radBase");
 				 _parameters0_0.Add(v34);
-				VarInfo v35 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"UpperFPAWexp");
+				VarInfo v35 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"LowerFPAWexp");
 				 _parameters0_0.Add(v35);
-				VarInfo v36 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"MaxDSF");
+				VarInfo v36 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"UpperFPAWexp");
 				 _parameters0_0.Add(v36);
-				VarInfo v37 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"LowerFPAWsen");
+				VarInfo v37 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"MaxDSF");
 				 _parameters0_0.Add(v37);
-				VarInfo v38 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"UpperFPAWsen");
+				VarInfo v38 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"LowerFPAWsen");
 				 _parameters0_0.Add(v38);
-				VarInfo v39 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"UpperVPD");
+				VarInfo v39 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"UpperFPAWsen");
 				 _parameters0_0.Add(v39);
-				VarInfo v40 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"LowerVPD");
+				VarInfo v40 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"UpperVPD");
 				 _parameters0_0.Add(v40);
-				VarInfo v41 = new CompositeStrategyVarInfo(_updateleafarea,"SLNcri");
+				VarInfo v41 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"LowerVPD");
 				 _parameters0_0.Add(v41);
+				VarInfo v42 = new CompositeStrategyVarInfo(_updateleafarea,"SLNcri");
+				 _parameters0_0.Add(v42);
 				mo0_0.Parameters=_parameters0_0;
 				//Inputs
 				List<PropertyDescription> _inputs0_0 = new List<PropertyDescription>();
@@ -235,7 +237,7 @@ namespace SiriusQualityMaizeLAI.Strategies
 					
 				_pd = new CRA.ModelLayer.MetadataTypes.PublisherData();
 				_pd.Add("Creator", "loic.manceau@inra.fr");
-				_pd.Add("Date", "6/5/2019");
+				_pd.Add("Date", "6/7/2019");
 				_pd.Add("Publisher", "INRA");
 			}
 
@@ -439,6 +441,7 @@ namespace SiriusQualityMaizeLAI.Strategies
 				}
 				set {
 						_calcligulett.Dse=value;
+						_calcstartexptt.Dse=value;
 						_calctiptt.Dse=value;
 				}
 			}

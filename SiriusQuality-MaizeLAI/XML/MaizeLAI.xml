@@ -3,19 +3,25 @@
   <Global>
     <SimpleStrategy />
     <CompositeStrategy>checked</CompositeStrategy>
-    <DataInterfacesDLL>C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
-    <StrategiesDLL>C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</StrategiesDLL>
+    <DataInterfacesDLL>C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
+    <StrategiesDLL>C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</StrategiesDLL>
     <IStrategyComponentName>IStrategySiriusQualityMaizeLAI</IStrategyComponentName>
   </Global>
   <General>
     <Domain>Crop</Domain>
+    <ModelType />
     <NameSpace>SiriusQualityMaizeLAI.Strategies</NameSpace>
     <StrategyName>MaizeLAI</StrategyName>
     <StrategyDescription>Composite Class</StrategyDescription>
+    <IsContext />
     <TimeSteps />
     <AuthorFirstRelease>Loic Manceau</AuthorFirstRelease>
     <Institution>INRA</Institution>
     <Email>loic.manceau@inra.fr</Email>
+    <DateFirstRelease>6/7/2019</DateFirstRelease>
+    <AuthorRevision />
+    <EmailAuthorRevision />
+    <DateRevision />
   </General>
   <AssociatedStrategies>
     <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcBaseWidth</StrategyFullName>

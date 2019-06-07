@@ -99,6 +99,19 @@ namespace SiriusQualityMaizeLAI.Strategies
 				 v4.VarType = CRA.ModelLayer.Core.VarInfo.Type.STATE;
 				 v4.ValueType = VarInfoValueTypes.GetInstanceForName("Double");
 				 _parameters0_0.Add(v4);
+				VarInfo v5 = new VarInfo();
+				 v5.DefaultValue = 190;
+				 v5.Description = "Thermal time from sowing to emergence";
+				 v5.Id = 0;
+				 v5.MaxValue = 500;
+				 v5.MinValue = 0;
+				 v5.Name = "Dse";
+				 v5.Size = 1;
+				 v5.Units = "°Cd";
+				 v5.URL = "";
+				 v5.VarType = CRA.ModelLayer.Core.VarInfo.Type.STATE;
+				 v5.ValueType = VarInfoValueTypes.GetInstanceForName("Double");
+				 _parameters0_0.Add(v5);
 				mo0_0.Parameters=_parameters0_0;
 				//Inputs
 				List<PropertyDescription> _inputs0_0 = new List<PropertyDescription>();
@@ -305,6 +318,18 @@ namespace SiriusQualityMaizeLAI.Strategies
 						else throw new Exception("Parameter 'btip' not found in strategy 'calcStartExpTT'");
 				}
 			}
+			public Double Dse
+			{ 
+				get {
+						VarInfo vi= _modellingOptionsManager.GetParameterByName("Dse");
+						if (vi != null && vi.CurrentValue!=null) return (Double)vi.CurrentValue ;
+						else throw new Exception("Parameter 'Dse' not found (or found null) in strategy 'calcStartExpTT'");
+				 } set {
+							VarInfo vi = _modellingOptionsManager.GetParameterByName("Dse");
+							if (vi != null)  vi.CurrentValue=value;
+						else throw new Exception("Parameter 'Dse' not found in strategy 'calcStartExpTT'");
+				}
+			}
 
 			// Getter and setters for the value of the parameters of a composite strategy
 			
@@ -370,6 +395,14 @@ namespace SiriusQualityMaizeLAI.Strategies
 				btipVarInfo.Units = "°Cd";
 				btipVarInfo.ValueType = CRA.ModelLayer.Core.VarInfoValueTypes.GetInstanceForName("Double");
 
+				DseVarInfo.Name = "Dse";
+				DseVarInfo.Description =" Thermal time from sowing to emergence";
+				DseVarInfo.MaxValue = 500;
+				DseVarInfo.MinValue = 0;
+				DseVarInfo.DefaultValue = 190;
+				DseVarInfo.Units = "°Cd";
+				DseVarInfo.ValueType = CRA.ModelLayer.Core.VarInfoValueTypes.GetInstanceForName("Double");
+
 				
        
 			}
@@ -407,6 +440,14 @@ namespace SiriusQualityMaizeLAI.Strategies
 				public static VarInfo btipVarInfo
 				{
 					get { return _btipVarInfo; }
+				}
+				private static VarInfo _DseVarInfo= new VarInfo();
+				/// <summary> 
+				///Dse VarInfo definition
+				/// </summary>
+				public static VarInfo DseVarInfo
+				{
+					get { return _DseVarInfo; }
 				}					
 			
 			//Parameters static VarInfo list of the composite class
@@ -492,6 +533,7 @@ namespace SiriusQualityMaizeLAI.Strategies
 					prc.AddCondition(new RangeBasedCondition(_modellingOptionsManager.GetParameterByName("k_bl")));
 					prc.AddCondition(new RangeBasedCondition(_modellingOptionsManager.GetParameterByName("Nlim")));
 					prc.AddCondition(new RangeBasedCondition(_modellingOptionsManager.GetParameterByName("btip")));
+					prc.AddCondition(new RangeBasedCondition(_modellingOptionsManager.GetParameterByName("Dse")));
 
 					
 
@@ -580,7 +622,7 @@ namespace SiriusQualityMaizeLAI.Strategies
                         }
                         else
                         {
-                            maizeleafstate.startExpTT[index] = abl * leafnum + bbl;
+                            maizeleafstate.startExpTT[index] = abl * leafnum + bbl + Dse;
                         }
 
                     }

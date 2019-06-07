@@ -3,7 +3,7 @@
   <Global>
     <SimpleStrategy />
     <CompositeStrategy />
-    <DataInterfacesDLL>C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
+    <DataInterfacesDLL>C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
     <StrategiesDLL />
     <IStrategyComponentName>IStrategySiriusQualityMaizeLAI</IStrategyComponentName>
   </Global>
@@ -76,6 +76,15 @@
     <MaxValue>1000</MaxValue>
     <MinValue>0</MinValue>
     <DefaultValue>500</DefaultValue>
+    <Units>°Cd</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>Dse</VarName>
+    <Description>Thermal time from sowing to emergence</Description>
+    <MaxValue>500</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>190</DefaultValue>
     <Units>°Cd</Units>
     <ValueType>Double</ValueType>
   </Parameters>

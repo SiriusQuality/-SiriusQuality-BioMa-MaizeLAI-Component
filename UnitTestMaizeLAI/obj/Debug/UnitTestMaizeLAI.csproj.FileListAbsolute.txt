@@ -10,3 +10,15 @@ C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\U
 C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.pdb
 C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\obj\Debug\UnitTestMaizeLAI.dll
 C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\obj\Debug\UnitTestMaizeLAI.pdb
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\bin\Debug\UnitTestMaizeLAI.dll
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\bin\Debug\UnitTestMaizeLAI.pdb
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\bin\Debug\CRA.AgroManagement2014.dll
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\bin\Debug\CRA.AgroManagement2014.Impacts.dll
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\bin\Debug\CRA.AgroManagement2014.Rules.dll
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\bin\Debug\CRA.Core.Preconditions.dll
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\bin\Debug\CRA.ModelLayer.dll
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.pdb
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\obj\Debug\UnitTestMaizeLAI.csprojResolveAssemblyReference.cache
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\obj\Debug\UnitTestMaizeLAI.dll
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\UnitTestMaizeLAI\obj\Debug\UnitTestMaizeLAI.pdb

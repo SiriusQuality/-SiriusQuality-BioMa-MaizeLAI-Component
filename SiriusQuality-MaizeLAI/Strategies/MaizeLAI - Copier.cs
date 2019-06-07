@@ -3,7 +3,7 @@
  //Author:Loic Manceau loic.manceau@inra.fr
  //Institution:INRA
  //Author of revision: 
- //Date first release:6/4/2019
+ //Date first release:6/5/2019
  //Date of revision:
 
 using System;
@@ -79,7 +79,7 @@ namespace SiriusQualityMaizeLAI.Strategies
 				 _parameters0_0.Add(v15);
 				VarInfo v16 = new CompositeStrategyVarInfo(_calclercoeff,"Sigma");
 				 _parameters0_0.Add(v16);
-				VarInfo v17 = new CompositeStrategyVarInfo(_calcligulett,"ttll1");
+				VarInfo v17 = new CompositeStrategyVarInfo(_calcligulett,"b_ll1");
 				 _parameters0_0.Add(v17);
 				VarInfo v18 = new CompositeStrategyVarInfo(_calcligulett,"k_ll");
 				 _parameters0_0.Add(v18);
@@ -235,7 +235,7 @@ namespace SiriusQualityMaizeLAI.Strategies
 					
 				_pd = new CRA.ModelLayer.MetadataTypes.PublisherData();
 				_pd.Add("Creator", "loic.manceau@inra.fr");
-				_pd.Add("Date", "6/4/2019");
+				_pd.Add("Date", "6/5/2019");
 				_pd.Add("Publisher", "INRA");
 			}
 
@@ -405,13 +405,13 @@ namespace SiriusQualityMaizeLAI.Strategies
 						_calclercoeff.Sigma=value;
 				}
 			}
-			public Double ttll1
+			public Double b_ll1
 			{ 
 				get {
-						return _calcligulett.ttll1 ;
+						return _calcligulett.b_ll1 ;
 				}
 				set {
-						_calcligulett.ttll1=value;
+						_calcligulett.b_ll1=value;
 				}
 			}
 			public Double k_ll
@@ -749,11 +749,11 @@ namespace SiriusQualityMaizeLAI.Strategies
 					get { return SiriusQualityMaizeLAI.Strategies.calcLERCoeff.SigmaVarInfo; }
 				}
 				/// <summary> 
-				///ttll1 VarInfo definition
+				///b_ll1 VarInfo definition
 				/// </summary>
-				public static VarInfo ttll1VarInfo
+				public static VarInfo b_ll1VarInfo
 				{
-					get { return SiriusQualityMaizeLAI.Strategies.calcLiguleTT.ttll1VarInfo; }
+					get { return SiriusQualityMaizeLAI.Strategies.calcLiguleTT.b_ll1VarInfo; }
 				}
 				/// <summary> 
 				///k_ll VarInfo definition
@@ -1141,7 +1141,7 @@ namespace SiriusQualityMaizeLAI.Strategies
                 LERc = toCopy.LERc;
                 Beta = toCopy.Beta;
                 Sigma = toCopy.Sigma;
-                ttll1 = toCopy.ttll1;
+                b_ll1 = toCopy.b_ll1;
                 k_ll = toCopy.k_ll;
                 a_ll1 = toCopy.a_ll1;
                 Dse = toCopy.Dse;

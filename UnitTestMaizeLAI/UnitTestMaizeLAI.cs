@@ -442,7 +442,7 @@ namespace UnitTestMaizeLAI
                 Assert.IsTrue(maizeLeafstate_.liguleTT.Count <= StartExpTT.Length);
                 if (iday == leafNumber.Length - 1) Assert.IsTrue(maizeLeafstate_.liguleTT.Count == LiguleTT.Length);
 
-                //for (int ileaf = 0; ileaf < maizeLeafstate_.startExpTT.Count; ileaf++) Assert.AreEqual(StartExpTT[ileaf], maizeLeafstate_.startExpTT[ileaf], 0.05);
+                for (int ileaf = 0; ileaf < maizeLeafstate_.startExpTT.Count; ileaf++) Assert.AreEqual(StartExpTT[ileaf], maizeLeafstate_.startExpTT[ileaf], 0.05);
                 Assert.IsTrue(maizeLeafstate_.startExpTT.Count <= StartExpTT.Length);
                 if (iday == leafNumber.Length - 1) Assert.IsTrue(maizeLeafstate_.startExpTT.Count == StartExpTT.Length);
                 
@@ -450,7 +450,7 @@ namespace UnitTestMaizeLAI
                 Assert.IsTrue(maizeLeafstate_.fullyExpTT.Count <= StopExpTT.Length);
                 if (iday == leafNumber.Length - 1) Assert.IsTrue(maizeLeafstate_.fullyExpTT.Count == StopExpTT.Length);
                 
-                //for (int ileaf = 0; ileaf < maizeLeafstate_.startEnlargeTT.Count; ileaf++) Assert.AreEqual(StartEnlTT[ileaf], maizeLeafstate_.startEnlargeTT[ileaf], 0.05);
+                for (int ileaf = 0; ileaf < maizeLeafstate_.startEnlargeTT.Count; ileaf++) Assert.AreEqual(StartEnlTT[ileaf], maizeLeafstate_.startEnlargeTT[ileaf], 0.05);
                 Assert.IsTrue(maizeLeafstate_.startEnlargeTT.Count <= StartEnlTT.Length);
                 if (iday == leafNumber.Length - 1) Assert.IsTrue(maizeLeafstate_.startEnlargeTT.Count == StartEnlTT.Length);
                 
