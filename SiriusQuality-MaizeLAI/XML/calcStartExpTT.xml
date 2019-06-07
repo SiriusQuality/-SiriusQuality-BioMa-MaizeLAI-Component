@@ -1,0 +1,100 @@
+<?xml version="1.0" standalone="yes"?>
+<StrategyDefinition>
+  <Global>
+    <SimpleStrategy />
+    <CompositeStrategy />
+    <DataInterfacesDLL>C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
+    <StrategiesDLL />
+    <IStrategyComponentName>IStrategySiriusQualityMaizeLAI</IStrategyComponentName>
+  </Global>
+  <General>
+    <Domain>Crop</Domain>
+    <ModelType />
+    <NameSpace>SiriusQualityMaizeLAI.Strategies</NameSpace>
+    <StrategyName>calcStartExpTT</StrategyName>
+    <StrategyDescription>Calculate Thermal Time at begining of linear elongation</StrategyDescription>
+    <IsContext>false</IsContext>
+    <TimeSteps />
+    <AuthorFirstRelease>Loic Manceau</AuthorFirstRelease>
+    <Institution>INRA</Institution>
+    <Email>loic.manceau@inra.fr</Email>
+    <DateFirstRelease>9/25/2017</DateFirstRelease>
+    <AuthorRevision />
+    <EmailAuthorRevision />
+    <DateRevision />
+  </General>
+  <Inputs>
+    <Variable>tipTT</Variable>
+    <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>leafNumber</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>previousLeafNumber</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>newLeafHasAppeared</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Outputs>
+    <Variable>startExpTT</Variable>
+    <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
+  </Outputs>
+  <Parameters>
+    <VarName>atip</VarName>
+    <Description>Phyllochron of tip appearence</Description>
+    <MaxValue>1000</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>50</DefaultValue>
+    <Units>°C/leaf</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>k_bl</VarName>
+    <Description>Fraction of slope for leaf initiation for upper group of maize leaf</Description>
+    <MaxValue>10</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>1.412</DefaultValue>
+    <Units>dimensionless</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>Nlim</VarName>
+    <Description>limite number for upper group of leaves</Description>
+    <MaxValue>30</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>6.617</DefaultValue>
+    <Units>leaf</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>btip</VarName>
+    <Description>Thermal time of the appearance of the first leaf </Description>
+    <MaxValue>1000</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>500</DefaultValue>
+    <Units>°Cd</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <LoadedAssemblies>
+    <Name>SiriusQuality-MaizeLAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>CRA.ModelLayer, Version=1.0.5212.29139, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>CRA.AgroManagement2014, Version=0.8.0.0, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+</StrategyDefinition>

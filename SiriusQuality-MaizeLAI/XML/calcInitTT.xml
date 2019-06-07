@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="yes"?>
+<StrategyDefinition>
+  <Global>
+    <SimpleStrategy />
+    <CompositeStrategy />
+    <DataInterfacesDLL>C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
+    <StrategiesDLL />
+    <IStrategyComponentName>IStrategySiriusQualityMaizeLAI</IStrategyComponentName>
+  </Global>
+  <General>
+    <Domain>Crop</Domain>
+    <ModelType />
+    <NameSpace>SiriusQualityMaizeLAI.Strategies</NameSpace>
+    <StrategyName>calcInitTT</StrategyName>
+    <StrategyDescription>Calcul thermal time at initialization of leaf</StrategyDescription>
+    <IsContext />
+    <TimeSteps />
+    <AuthorFirstRelease>Loic Manceau</AuthorFirstRelease>
+    <Institution>INRA</Institution>
+    <Email>loic.manceau@inra.fr</Email>
+    <DateFirstRelease>11/24/2017</DateFirstRelease>
+    <AuthorRevision />
+    <EmailAuthorRevision />
+    <DateRevision />
+  </General>
+  <Inputs>
+    <Variable>previousLeafNumber</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>leafNumber</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>newLeafHasAppeared</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Outputs>
+    <Variable>initialisationTT</Variable>
+    <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
+  </Outputs>
+  <Parameters>
+    <VarName>leafNoInitEmerg</VarName>
+    <Description>number of leaves initiated at plant emergence</Description>
+    <MaxValue>50</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>2</DefaultValue>
+    <Units>leaves</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>LIR</VarName>
+    <Description>leaf initiation rate</Description>
+    <MaxValue>10</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>0.1</DefaultValue>
+    <Units>leaf/°Cd</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>ttinitflo</VarName>
+    <Description>Thermal time of floral initiations of leaves created before emergence</Description>
+    <MaxValue>150</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>28</DefaultValue>
+    <Units>°Cd</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <LoadedAssemblies>
+    <Name>SiriusQuality-MaizeLAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>CRA.ModelLayer, Version=1.0.5212.29139, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>CRA.AgroManagement2014, Version=0.8.0.0, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+</StrategyDefinition>

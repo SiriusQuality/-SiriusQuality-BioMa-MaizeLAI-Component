@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="yes"?>
+<StrategyDefinition>
+  <Global>
+    <SimpleStrategy />
+    <CompositeStrategy />
+    <DataInterfacesDLL>C:\Users\mancealo\Documents\Sirius Quality\branches\DebugMaisOct\Code\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
+    <StrategiesDLL />
+    <IStrategyComponentName>IStrategySiriusQualityMaizeLAI</IStrategyComponentName>
+  </Global>
+  <General>
+    <Domain>Crop</Domain>
+    <ModelType />
+    <NameSpace>SiriusQualityMaizeLAI.Strategies</NameSpace>
+    <StrategyName>calcLERCoeff</StrategyName>
+    <StrategyDescription>Calculate the coefficient for conversion of lef elongation rate in mm/day to expension rate in mm/oCd</StrategyDescription>
+    <IsContext />
+    <TimeSteps />
+    <AuthorFirstRelease>Loic Manceau</AuthorFirstRelease>
+    <Institution>INRA</Institution>
+    <Email>loic.manceau@inra.fr</Email>
+    <DateFirstRelease>9/25/2017</DateFirstRelease>
+    <AuthorRevision />
+    <EmailAuthorRevision />
+    <DateRevision />
+  </General>
+  <Inputs>
+    <Variable>leafNumber</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>previousLeafNumber</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>newLeafHasAppeared</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Outputs>
+    <Variable>coefLER</Variable>
+    <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
+  </Outputs>
+  <Parameters>
+    <VarName>Nfinal</VarName>
+    <Description>Final Leaf Number</Description>
+    <MaxValue>30</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>16</DefaultValue>
+    <Units>°Cd/leaf</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>Beta</VarName>
+    <Description>Distance between inflexion points relative to maximum number of leaves</Description>
+    <MaxValue>1</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>0.59</DefaultValue>
+    <Units>dimensioless</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>Sigma</VarName>
+    <Description>Leaf rank of the maximum potential elongation rate relative to maximum leaf number</Description>
+    <MaxValue>1</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>0.35</DefaultValue>
+    <Units>dimensioless</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <LoadedAssemblies>
+    <Name>SiriusQuality-MaizeLAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>CRA.ModelLayer, Version=1.0.5212.29139, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>CRA.AgroManagement2014, Version=0.8.0.0, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+</StrategyDefinition>

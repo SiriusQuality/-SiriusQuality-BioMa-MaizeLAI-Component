@@ -1,0 +1,115 @@
+<?xml version="1.0" standalone="yes"?>
+<StrategyDefinition>
+  <Global>
+    <SimpleStrategy />
+    <CompositeStrategy />
+    <DataInterfacesDLL>C:\Users\mancealo\Documents\Sirius Quality\branches\DebugMaisOct\Code\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
+    <StrategiesDLL />
+    <IStrategyComponentName>IStrategySiriusQualityMaizeLAI</IStrategyComponentName>
+  </Global>
+  <General>
+    <Domain>Crop</Domain>
+    <ModelType />
+    <NameSpace>SiriusQualityMaizeLAI.Strategies</NameSpace>
+    <StrategyName>calcPotentialWidth</StrategyName>
+    <StrategyDescription>Calculate the potential width</StrategyDescription>
+    <IsContext />
+    <TimeSteps />
+    <AuthorFirstRelease>Loic Manceau</AuthorFirstRelease>
+    <Institution>INRA</Institution>
+    <Email>loic.manceau@inra.fr</Email>
+    <DateFirstRelease>9/25/2017</DateFirstRelease>
+    <AuthorRevision />
+    <EmailAuthorRevision />
+    <DateRevision />
+  </General>
+  <Inputs>
+    <Variable>finalLeafNumber</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>leafNumber</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>previousLeafNumber</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>newLeafHasAppeared</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Outputs>
+    <Variable>potentialWidth</Variable>
+    <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
+  </Outputs>
+  <Parameters>
+    <VarName>minWidth</VarName>
+    <Description>Width of first leaves</Description>
+    <MaxValue>50</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>1.5</DefaultValue>
+    <Units>cm</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>smallLeavesRank</VarName>
+    <Description>Rank of first leaves in % of final leaf number</Description>
+    <MaxValue>1</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>0.2</DefaultValue>
+    <Units>dilmensionless</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>bigLeavesRank</VarName>
+    <Description>Rank of leaf with max width % of final leaf number</Description>
+    <MaxValue>1</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>0.66</DefaultValue>
+    <Units>dilmensionless</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>maxWidth</VarName>
+    <Description>Width of big leaves</Description>
+    <MaxValue>50</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>7.8</DefaultValue>
+    <Units>cm</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>bigLeavesPlateauWidth</VarName>
+    <Description>Size of third of plateau for last leaves in % of final leaf number</Description>
+    <MaxValue>1</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>0.29</DefaultValue>
+    <Units>dilmensionless</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <Parameters>
+    <VarName>SlopeScale</VarName>
+    <Description>Scale between first and last leaves slope</Description>
+    <MaxValue>10</MaxValue>
+    <MinValue>0</MinValue>
+    <DefaultValue>0.25</DefaultValue>
+    <Units>dilmensionless</Units>
+    <ValueType>Double</ValueType>
+  </Parameters>
+  <LoadedAssemblies>
+    <Name>SiriusQuality-MaizeLAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>CRA.ModelLayer, Version=1.0.5212.29139, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+</StrategyDefinition>

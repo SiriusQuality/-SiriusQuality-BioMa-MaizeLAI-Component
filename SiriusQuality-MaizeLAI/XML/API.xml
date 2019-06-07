@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<API_Definitions>
+  <Specifications>
+    <Col_FileName>C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\XML\API.xml</Col_FileName>
+    <Col_Postfix>SiriusQualityMaizeLAI</Col_Postfix>
+    <Col_MainMethod>Estimate</Col_MainMethod>
+    <Col_MethodParameters>( MaizeLAIState m, MaizeLeafState m1, MaizeLeafState m2, ActEvents ae);</Col_MethodParameters>
+    <Col_NameSpace>SiriusQualityMaizeLAI</Col_NameSpace>
+  </Specifications>
+  <DomainClasses>
+    <Col_ClassFileNames>MaizeLAIState</Col_ClassFileNames>
+  </DomainClasses>
+  <DomainClasses>
+    <Col_ClassFileNames>MaizeLeafState</Col_ClassFileNames>
+  </DomainClasses>
+</API_Definitions>

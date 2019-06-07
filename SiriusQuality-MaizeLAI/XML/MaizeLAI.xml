@@ -1,0 +1,80 @@
+<?xml version="1.0" standalone="yes"?>
+<StrategyDefinition>
+  <Global>
+    <SimpleStrategy />
+    <CompositeStrategy>checked</CompositeStrategy>
+    <DataInterfacesDLL>C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
+    <StrategiesDLL>C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</StrategiesDLL>
+    <IStrategyComponentName>IStrategySiriusQualityMaizeLAI</IStrategyComponentName>
+  </Global>
+  <General>
+    <Domain>Crop</Domain>
+    <NameSpace>SiriusQualityMaizeLAI.Strategies</NameSpace>
+    <StrategyName>MaizeLAI</StrategyName>
+    <StrategyDescription>Composite Class</StrategyDescription>
+    <TimeSteps />
+    <AuthorFirstRelease>Loic Manceau</AuthorFirstRelease>
+    <Institution>INRA</Institution>
+    <Email>loic.manceau@inra.fr</Email>
+  </General>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcBaseWidth</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcFullyExpTT</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcFracPopn</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcInitTT</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcLER</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcLERCoeff</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcLiguleTT</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcStartExpTT</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcStartEnlargeTT</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcStopEnlargeTT</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcTipTT</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.DeltaLAIMaize</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor</StrategyFullName>
+  </AssociatedStrategies>
+  <AssociatedStrategies>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.UpdateLeafArea</StrategyFullName>
+  </AssociatedStrategies>
+  <LoadedAssemblies>
+    <Name>SiriusQuality-MaizeLAI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>CRA.ModelLayer, Version=1.0.5212.29139, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>CRA.AgroManagement2014, Version=0.8.0.0, Culture=neutral, PublicKeyToken=null</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+  <LoadedAssemblies>
+    <Name>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
+  </LoadedAssemblies>
+</StrategyDefinition>

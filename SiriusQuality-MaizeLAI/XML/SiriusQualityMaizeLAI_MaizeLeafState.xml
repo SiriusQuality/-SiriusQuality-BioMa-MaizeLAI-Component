@@ -1,0 +1,271 @@
+<?xml version="1.0" standalone="yes"?>
+<MaizeLeafState>
+  <xs:schema id="MaizeLeafState" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="MaizeLeafState" msdata:IsDataSet="true" msdata:Locale="en-US">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="VarInfoVariables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="MinValue" type="xs:double" minOccurs="0" />
+                <xs:element name="MaxValue" type="xs:double" minOccurs="0" />
+                <xs:element name="DefaultValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="URL" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Description">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DomainClassNameSpace" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeURL" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeDescription" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <VarInfoVariables>
+    <Name>State</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>3</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>dimensionless</Units>
+    <Type>List&lt;int&gt;</Type>
+    <Description>State of the leaf, 0:Growing, 1:Mature,2:Senescing,3:Dead</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>liguleTT</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>2000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>°Cd</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>TT at ligule appeareance</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>fullyExpTT</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>2000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>°Cd</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>TT at initiation, when fully expanded (liguleTT - 50)</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>GAI</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>m²/m²</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Green Area index (Lamina Area Index+Sheath Area Index</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>length</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>mm</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Leaf Length</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>width</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>mm</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Leaf width</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>fracPopn</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>0.9999</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>dimensionless</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>fraction of Haun stage of the last leaf</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>startExpTT</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>2000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>°Cd</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Thermal Time at start of expansion (initTT + 100)</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>baseWidth</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>mm</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Potential Width</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>area</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>mm²</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Area of the leave</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>coefLER</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>100</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>dimessionless</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Scaling factor from leaf 6 LER to the others r ranks</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>tipTT</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>2000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>°Cd</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Thermal Time at tip emergence</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>exposedArea</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>mm²</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Exposed area of the leaf</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>PreviousState</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>3</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>dimensionless</Units>
+    <Type>List&lt;int&gt;</Type>
+    <Description>Previous State of the leaf, 0:Growing, 1:Mature,2:Senescing,3:Dead</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>isPrematurelyDying</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>dimensionless</Units>
+    <Type>List&lt;int&gt;</Type>
+    <Description>Flag</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>startEnlargeTT</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>10000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>°Cd</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Begining of leaf width extension</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>stopEnlargeTT</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>10000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>°Cd</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Stop of Leaf width expension</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>leafAge</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>500</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>days</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Leaf age</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>cumIntRad</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>10</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>MJ/m²</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Cumulated Intercepted Radiations</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>initialisationTT</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>10000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>°Cd</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Thermal Time At Initialisation</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>deltaAI</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>m²/m²</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Increment in aera index of the day</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>LaminaAI</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>m²/m²</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Leaf lamina Area Index</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>MaxAI</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>m²/m²</Units>
+    <Type>List&lt;double&gt;</Type>
+    <Description>Leaf maximum area index over the season</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <Description>
+    <DomainClassNameSpace>SiriusQualityMaizeLAI</DomainClassNameSpace>
+    <DomainTypeName>MaizeLeafState</DomainTypeName>
+    <DomainTypeURL>http://</DomainTypeURL>
+    <DomainTypeDescription>States for a leaf of maize</DomainTypeDescription>
+  </Description>
+</MaizeLeafState>
