@@ -527,7 +527,7 @@ namespace SiriusQualityMaizeLAI.Strategies
                         double lag = Lagmax * leafnum;
 
                         if (leafnum <= Nfinal - Nlast) maizeleafstate.fullyExpTT[index] = Math.Max(0, maizeleafstate.liguleTT[index] - lag);
-                        else maizeleafstate.fullyExpTT[index] = maizeleafstate.liguleTT[index - 1]; 
+                        else maizeleafstate.fullyExpTT[index] = maizeleafstate.fullyExpTT[index - 1]; 
                     }
                 }
 
