@@ -93,8 +93,8 @@ namespace SiriusQuality_MaizeLAIConsole
 
                 internal double Nfinal = 16.0;//leaf, genotypic
                 //Leaf Expansion Rate
-                double LERa = 4.25;//mm/°Cd, genotypic
-                double LERb = -0.63;//mm/°Cd/kPa, genotypic
+                double LERa = 3.19;//mm/°Cd, genotypic
+                double LERb = -1.17;//mm/°Cd/kPa, genotypic
                 double LERc = 3.52;//mm/°Cd/MPa, genotypic
                 double Beta = 0.68;//Dimensionless
                 double Sigma = 0.36;//Dimensionless
