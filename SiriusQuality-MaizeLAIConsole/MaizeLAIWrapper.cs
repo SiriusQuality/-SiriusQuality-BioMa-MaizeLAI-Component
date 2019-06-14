@@ -97,7 +97,7 @@ namespace SiriusQuality_MaizeLAIConsole
                 double LERb = -1.17;//mm/°Cd/kPa, genotypic
                 double LERc = 3.52;//mm/°Cd/MPa, genotypic
                 double Beta = 0.68;//Dimensionless
-                double Sigma = 0.36;//Dimensionless
+                double Sigma = 0.46;//Dimensionless
 
                 //Width
                 double width6 = 41.0;//mm
@@ -112,7 +112,7 @@ namespace SiriusQuality_MaizeLAIConsole
                 //Tip thermal time
                 double atip = 51.0;//°Cd/leaf
                 double btip = -49.0;//°Cd
-                double Dse = 33.0;//°Cd
+                public double Dse = 33.0;//°Cd
 
                 //Start elongation Thermal Time
                 double k_bl = 0.708;//Dimensionless
@@ -267,7 +267,6 @@ namespace SiriusQuality_MaizeLAIConsole
             maizeLeafState_.fracPopn.Add(0.0);
             maizeLeafState_.startExpTT.Add(0.0);
             maizeLeafState_.baseWidth.Add(0.0);
-            maizeLeafState_.area.Add(0.0);
             maizeLeafState_.coefLER.Add(0.0);
             maizeLeafState_.tipTT.Add(0.0);
             maizeLeafState_.exposedArea.Add(0.0);
@@ -289,10 +288,12 @@ namespace SiriusQuality_MaizeLAIConsole
             maizeLeafState1_.MaxAI.Add(0.0);
             maizeLeafState1_.deltaAI.Add(0.0);
             maizeLeafState1_.LaminaAI.Add(0.0);
+            maizeLeafState1_.area.Add(0.0);
 
             maizeLeafState_.MaxAI.Add(0.0);
             maizeLeafState_.deltaAI.Add(0.0);
             maizeLeafState_.LaminaAI.Add(0.0);
+            maizeLeafState_.area.Add(0.0);
 
 
         }
@@ -315,7 +316,7 @@ namespace SiriusQuality_MaizeLAIConsole
 
                     All[ilayer].length = maizeLeafState1_.length[ilayer];
                     All[ilayer].width = maizeLeafState_.width[ilayer];
-                    All[ilayer].area = maizeLeafState_.area[ilayer];
+                    All[ilayer].area = maizeLeafState1_.area[ilayer];
                     All[ilayer].exposedArea = maizeLeafState1_.exposedArea[ilayer];
 
                     All[ilayer].age = maizeLeafState1_.leafAge[ilayer];

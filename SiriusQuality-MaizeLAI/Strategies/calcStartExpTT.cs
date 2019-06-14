@@ -573,21 +573,21 @@ namespace SiriusQualityMaizeLAI.Strategies
 			/// </summary>
 			public void Estimate(SiriusQualityMaizeLAI.MaizeLAIState maizelaistate,SiriusQualityMaizeLAI.MaizeLeafState maizeleafstate,SiriusQualityMaizeLAI.MaizeLeafState maizeleafstate1,CRA.AgroManagement.ActEvents actevents)
 			{
-				try
-				{
+                try
+                {
 					CalculateModel(maizelaistate,maizeleafstate,maizeleafstate1,actevents);
 
 					//Uncomment the next line to use the trace
 					//TraceStrategies.TraceEvent(System.Diagnostics.TraceEventType.Verbose, 1005,"Strategy: " + this.GetType().Name + " - Model executed");
-				}
-				catch (Exception exception)
-				{
-					//Uncomment the next line to use the trace
-					//TraceStrategies.TraceEvent(System.Diagnostics.TraceEventType.Error, 1003,		"Strategy: " + this.GetType().Name + " - Unhandled exception running model");
+                }
+                catch (Exception exception)
+                {
+                    //Uncomment the next line to use the trace
+                    //TraceStrategies.TraceEvent(System.Diagnostics.TraceEventType.Error, 1003,		"Strategy: " + this.GetType().Name + " - Unhandled exception running model");
 
-					string msg = "Error in component SiriusQualityMaizeLAI.Strategies, strategy: " + this.GetType().Name + ": Unhandled exception running model. "+exception.GetType().FullName+" - "+exception.Message;				
-					throw new Exception(msg, exception);
-				}
+                    string msg = "Error in component SiriusQualityMaizeLAI.Strategies, strategy: " + this.GetType().Name + ": Unhandled exception running model. " + exception.GetType().FullName + " - " + exception.Message;
+                    throw new Exception(msg, exception);
+                }
 			}
 
 		

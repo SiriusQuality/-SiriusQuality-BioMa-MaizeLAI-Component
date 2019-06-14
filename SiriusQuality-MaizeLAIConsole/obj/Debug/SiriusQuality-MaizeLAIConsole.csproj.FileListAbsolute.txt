@@ -12,8 +12,6 @@ C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\S
 C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\obj\Debug\SiriusQuality-MaizeLAIConsole.exe
 C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\obj\Debug\SiriusQuality-MaizeLAIConsole.pdb
 C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\bin\Debug\SiriusQuality-MaizeLAIConsole.exe.config
-C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\obj\Debug\SiriusQuality-MaizeLAIConsole.exe
-C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\obj\Debug\SiriusQuality-MaizeLAIConsole.pdb
 C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\bin\Debug\SiriusQuality-MaizeLAIConsole.exe
 C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\bin\Debug\SiriusQuality-MaizeLAIConsole.pdb
 C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\bin\Debug\CRA.AgroManagement2014.dll
@@ -24,3 +22,5 @@ C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Compone
 C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\bin\Debug\SiriusQuality-MaizeLAI.dll
 C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\bin\Debug\SiriusQuality-MaizeLAI.pdb
 C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\obj\Debug\SiriusQuality-MaizeLAIConsole.csprojResolveAssemblyReference.cache
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\obj\Debug\SiriusQuality-MaizeLAIConsole.exe
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAIConsole\obj\Debug\SiriusQuality-MaizeLAIConsole.pdb

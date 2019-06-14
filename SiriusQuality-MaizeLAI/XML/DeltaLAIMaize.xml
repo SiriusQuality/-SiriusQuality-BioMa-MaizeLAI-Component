@@ -103,6 +103,10 @@
     <Variable>baseWidth</Variable>
     <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
   </Inputs>
+  <Inputs>
+    <Variable>area</Variable>
+    <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
+  </Inputs>
   <Outputs>
     <Variable>WaterLimitedPotDeltaAIList</Variable>
     <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
@@ -128,10 +132,6 @@
     <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
   </Outputs>
   <Outputs>
-    <Variable>area</Variable>
-    <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
-  </Outputs>
-  <Outputs>
     <Variable>width</Variable>
     <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
   </Outputs>
@@ -149,6 +149,10 @@
   </Outputs>
   <Outputs>
     <Variable>exposedArea</Variable>
+    <DomainClass>maizeleafstate1 - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
+  </Outputs>
+  <Outputs>
+    <Variable>area</Variable>
     <DomainClass>maizeleafstate1 - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
   </Outputs>
   <Parameters>

@@ -13,7 +13,7 @@
     <NameSpace>SiriusQualityMaizeLAI.Strategies</NameSpace>
     <StrategyName>MaizeLAI</StrategyName>
     <StrategyDescription>Composite Class</StrategyDescription>
-    <IsContext />
+    <IsContext>false</IsContext>
     <TimeSteps />
     <AuthorFirstRelease>Loic Manceau</AuthorFirstRelease>
     <Institution>INRA</Institution>
