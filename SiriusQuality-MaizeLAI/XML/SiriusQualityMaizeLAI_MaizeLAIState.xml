@@ -73,16 +73,6 @@
     <URL>http://</URL>
   </VarInfoVariables>
   <VarInfoVariables>
-    <Name>isPotentialLAI</Name>
-    <MinValue>0</MinValue>
-    <MaxValue>1</MaxValue>
-    <DefaultValue>0</DefaultValue>
-    <Units>NA</Units>
-    <Type>int</Type>
-    <Description xml:space="preserve"> </Description>
-    <URL>http://</URL>
-  </VarInfoVariables>
-  <VarInfoVariables>
     <Name>VPDairCanopy</Name>
     <MinValue>0</MinValue>
     <MaxValue>100</MaxValue>
@@ -90,26 +80,6 @@
     <Units xml:space="preserve"> </Units>
     <Type>double</Type>
     <Description xml:space="preserve"> </Description>
-    <URL>http://</URL>
-  </VarInfoVariables>
-  <VarInfoVariables>
-    <Name>DSF</Name>
-    <MinValue>0</MinValue>
-    <MaxValue>10</MaxValue>
-    <DefaultValue>0</DefaultValue>
-    <Units xml:space="preserve"> </Units>
-    <Type>double</Type>
-    <Description>drought senescence factor</Description>
-    <URL>http://</URL>
-  </VarInfoVariables>
-  <VarInfoVariables>
-    <Name>DEF</Name>
-    <MinValue>0</MinValue>
-    <MaxValue>10</MaxValue>
-    <DefaultValue>0</DefaultValue>
-    <Units xml:space="preserve"> </Units>
-    <Type>double</Type>
-    <Description>drought expansion factor</Description>
     <URL>http://</URL>
   </VarInfoVariables>
   <VarInfoVariables>

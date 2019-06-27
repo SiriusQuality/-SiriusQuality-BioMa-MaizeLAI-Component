@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 /// 
-/// This class was created from file C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\XML\SiriusQualityMaizeLAI_MaizeLAIState.xml
+/// This class was created from file C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\XML\SiriusQualityMaizeLAI_MaizeLAIState.xml
 /// The tool used was: DCC - Domain Class Coder, http://components.biomamodelling.org/, DCC
 /// 
 /// Loic Manceau
@@ -17,7 +17,7 @@
 /// INRA
 /// 
 /// 
-/// 6/3/2019 3:12:46 PM
+/// 6/27/2019 4:30:10 PM
 /// 
 namespace SiriusQualityMaizeLAI
 {
@@ -38,13 +38,7 @@ namespace SiriusQualityMaizeLAI
         
         static VarInfo _FPAW = new VarInfo();
         
-        static VarInfo _isPotentialLAI = new VarInfo();
-        
         static VarInfo _VPDairCanopy = new VarInfo();
-        
-        static VarInfo _DSF = new VarInfo();
-        
-        static VarInfo _DEF = new VarInfo();
         
         static VarInfo _incDeltaAreaLimitSF = new VarInfo();
         
@@ -146,38 +140,11 @@ namespace SiriusQualityMaizeLAI
         }
         
         /// <summary> </summary>
-        public static  VarInfo isPotentialLAI
-        {
-            get
-            {
-                return  _isPotentialLAI;
-            }
-        }
-        
-        /// <summary> </summary>
         public static  VarInfo VPDairCanopy
         {
             get
             {
                 return  _VPDairCanopy;
-            }
-        }
-        
-        /// <summary>drought senescence factor</summary>
-        public static  VarInfo DSF
-        {
-            get
-            {
-                return  _DSF;
-            }
-        }
-        
-        /// <summary>drought expansion factor</summary>
-        public static  VarInfo DEF
-        {
-            get
-            {
-                return  _DEF;
             }
         }
         
@@ -340,15 +307,6 @@ namespace SiriusQualityMaizeLAI
             _FPAW.URL = "http://";
             _FPAW.ValueType = VarInfoValueTypes.GetInstanceForName("Double");
             //   
-            _isPotentialLAI.Name = "isPotentialLAI";
-            _isPotentialLAI.Description = " ";
-            _isPotentialLAI.MaxValue = 1D;
-            _isPotentialLAI.MinValue = 0D;
-            _isPotentialLAI.DefaultValue = 0D;
-            _isPotentialLAI.Units = "NA";
-            _isPotentialLAI.URL = "http://";
-            _isPotentialLAI.ValueType = VarInfoValueTypes.GetInstanceForName("Integer");
-            //   
             _VPDairCanopy.Name = "VPDairCanopy";
             _VPDairCanopy.Description = " ";
             _VPDairCanopy.MaxValue = 100D;
@@ -357,24 +315,6 @@ namespace SiriusQualityMaizeLAI
             _VPDairCanopy.Units = " ";
             _VPDairCanopy.URL = "http://";
             _VPDairCanopy.ValueType = VarInfoValueTypes.GetInstanceForName("Double");
-            //   
-            _DSF.Name = "DSF";
-            _DSF.Description = "drought senescence factor";
-            _DSF.MaxValue = 10D;
-            _DSF.MinValue = 0D;
-            _DSF.DefaultValue = 0D;
-            _DSF.Units = " ";
-            _DSF.URL = "http://";
-            _DSF.ValueType = VarInfoValueTypes.GetInstanceForName("Double");
-            //   
-            _DEF.Name = "DEF";
-            _DEF.Description = "drought expansion factor";
-            _DEF.MaxValue = 10D;
-            _DEF.MinValue = 0D;
-            _DEF.DefaultValue = 0D;
-            _DEF.Units = " ";
-            _DEF.URL = "http://";
-            _DEF.ValueType = VarInfoValueTypes.GetInstanceForName("Double");
             //   
             _incDeltaAreaLimitSF.Name = "incDeltaAreaLimitSF";
             _incDeltaAreaLimitSF.Description = " ";

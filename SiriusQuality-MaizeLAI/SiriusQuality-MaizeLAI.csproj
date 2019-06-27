@@ -109,9 +109,6 @@
     <Compile Include="Strategies\DeltaLAIMaize.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Strategies\LeafExpansionDroughtFactor.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Strategies\MaizeLAI.cs">
       <SubType>Code</SubType>
     </Compile>

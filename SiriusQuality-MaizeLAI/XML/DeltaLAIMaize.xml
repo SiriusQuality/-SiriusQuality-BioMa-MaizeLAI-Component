@@ -3,7 +3,7 @@
   <Global>
     <SimpleStrategy />
     <CompositeStrategy />
-    <DataInterfacesDLL>C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
+    <DataInterfacesDLL>C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
     <StrategiesDLL />
     <IStrategyComponentName>IStrategySiriusQualityMaizeLAI</IStrategyComponentName>
   </Global>
@@ -23,10 +23,6 @@
     <EmailAuthorRevision />
     <DateRevision />
   </General>
-  <Inputs>
-    <Variable>DEF</Variable>
-    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
-  </Inputs>
   <Inputs>
     <Variable>cumulTTPHenoMaize</Variable>
     <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>

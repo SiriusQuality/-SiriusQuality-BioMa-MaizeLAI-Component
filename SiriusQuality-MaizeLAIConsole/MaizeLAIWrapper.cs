@@ -68,8 +68,6 @@ namespace SiriusQuality_MaizeLAIConsole
 
         public double getPotentialIncDeltaArea(){ return maizeLaiState_.potentialIncDeltaArea; }
 
-        public double DEF { get { return maizeLaiState_.DEF; } }
-
         public double LER { get { return maizeLaiState_.LER; } }
 
         public double getWaterLimitedPotDeltaAI(int i)
@@ -137,17 +135,6 @@ namespace SiriusQuality_MaizeLAIConsole
                 double plantDensity =  7.5;//plant/m²
                 double SLNcri = 1.0;//g(N)/m²(leaf)
                 
-                //Drought Stress Factors
-                double UpperFPAWexp = 0.5;//Dimensionless
-                double LowerFPAWexp = 0.1;//Dimensionless
-                double UpperVPD = 45.0;//Dimensionless
-                double LowerVPD = 15.0;//Dimensionless
-                /********/
-                //not used (parameter for senescence acceleration stress factor), no senescence implemented yet
-                double MaxDSF = 4.5;
-                double UpperFPAWsen = 0.4;
-                double LowerFPAWsen = 0.1;
-                /********/
                 
                 
                 
@@ -181,14 +168,13 @@ namespace SiriusQuality_MaizeLAIConsole
         #region Estimate
 
         public void Estimate(double beforeUpdateLeafNumber, bool newLeafHasAppeared, double finalLeafNumber, double leafNumber,
-            double FPAW, bool isPotentialLAI, List<LeafLayer> All, double VPDairCanopy,
+            double FPAW, List<LeafLayer> All, double VPDairCanopy,
             double cumulTTPhenoMaize, double deltaTTPhenoMaize, double[] TCanopyHourly, double[] VPDeq, double radInterceptedMaize)
         {
                 maizeLaiState_.newLeafHasAppeared = newLeafHasAppeared ? 1 : 0;
                 maizeLaiState_.finalLeafNumber = finalLeafNumber;
                 maizeLaiState_.leafNumber = leafNumber;
                 maizeLaiState_.FPAW = FPAW;
-                maizeLaiState_.isPotentialLAI = isPotentialLAI ? 1 : 0;
                 maizeLaiState_.cumulTTPHenoMaize = cumulTTPhenoMaize;
                 maizeLaiState_.deltaTTPhenoMaize = deltaTTPhenoMaize;
                 maizeLaiState_.VPDairCanopy = VPDairCanopy;
@@ -362,13 +348,6 @@ namespace SiriusQuality_MaizeLAIConsole
             maizeLAI_.plantDensity = plantDensity;
             maizeLAI_.SensiRad = SensiRad;
             maizeLAI_.radBase = radBase;
-            maizeLAI_.LowerFPAWexp = LowerFPAWexp;
-            maizeLAI_.UpperFPAWexp = UpperFPAWexp;
-            maizeLAI_.MaxDSF = MaxDSF;
-            maizeLAI_.LowerFPAWsen = LowerFPAWsen;
-            maizeLAI_.UpperFPAWsen = UpperFPAWsen;
-            maizeLAI_.UpperVPD = UpperVPD;
-            maizeLAI_.LowerVPD = LowerVPD;
             maizeLAI_.SLNcri = SLNcri;
             maizeLAI_.ttinitflo=ttinitflo;
 

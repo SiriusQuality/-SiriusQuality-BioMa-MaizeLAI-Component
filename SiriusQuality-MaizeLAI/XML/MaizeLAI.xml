@@ -9,28 +9,22 @@
   </Global>
   <General>
     <Domain>Crop</Domain>
-    <ModelType />
     <NameSpace>SiriusQualityMaizeLAI.Strategies</NameSpace>
     <StrategyName>MaizeLAI</StrategyName>
     <StrategyDescription>Composite Class</StrategyDescription>
-    <IsContext>false</IsContext>
     <TimeSteps />
     <AuthorFirstRelease>Loic Manceau</AuthorFirstRelease>
     <Institution>INRA</Institution>
     <Email>loic.manceau@inra.fr</Email>
-    <DateFirstRelease>6/7/2019</DateFirstRelease>
-    <AuthorRevision />
-    <EmailAuthorRevision />
-    <DateRevision />
   </General>
   <AssociatedStrategies>
     <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcBaseWidth</StrategyFullName>
   </AssociatedStrategies>
   <AssociatedStrategies>
-    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcFullyExpTT</StrategyFullName>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcFracPopn</StrategyFullName>
   </AssociatedStrategies>
   <AssociatedStrategies>
-    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcFracPopn</StrategyFullName>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcFullyExpTT</StrategyFullName>
   </AssociatedStrategies>
   <AssociatedStrategies>
     <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcInitTT</StrategyFullName>
@@ -45,10 +39,10 @@
     <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcLiguleTT</StrategyFullName>
   </AssociatedStrategies>
   <AssociatedStrategies>
-    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcStartExpTT</StrategyFullName>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcStartEnlargeTT</StrategyFullName>
   </AssociatedStrategies>
   <AssociatedStrategies>
-    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcStartEnlargeTT</StrategyFullName>
+    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcStartExpTT</StrategyFullName>
   </AssociatedStrategies>
   <AssociatedStrategies>
     <StrategyFullName>SiriusQualityMaizeLAI.Strategies.calcStopEnlargeTT</StrategyFullName>
@@ -58,9 +52,6 @@
   </AssociatedStrategies>
   <AssociatedStrategies>
     <StrategyFullName>SiriusQualityMaizeLAI.Strategies.DeltaLAIMaize</StrategyFullName>
-  </AssociatedStrategies>
-  <AssociatedStrategies>
-    <StrategyFullName>SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor</StrategyFullName>
   </AssociatedStrategies>
   <AssociatedStrategies>
     <StrategyFullName>SiriusQualityMaizeLAI.Strategies.UpdateLeafArea</StrategyFullName>

@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 /// 
-/// This class was created from file C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\XML\SiriusQualityMaizeLAI_MaizeLAIState.xml
+/// This class was created from file C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\XML\SiriusQualityMaizeLAI_MaizeLAIState.xml
 /// The tool used was: DCC - Domain Class Coder, http://components.biomamodelling.org/, DCC
 /// 
 /// Loic Manceau
@@ -17,7 +17,7 @@
 /// INRA
 /// 
 /// 
-/// 6/3/2019 3:12:46 PM
+/// 6/27/2019 4:30:10 PM
 /// 
 namespace SiriusQualityMaizeLAI
 {
@@ -42,13 +42,7 @@ namespace SiriusQualityMaizeLAI
         
         private double _FPAW;
         
-        private int _isPotentialLAI;
-        
         private double _VPDairCanopy;
-        
-        private double _DSF;
-        
-        private double _DEF;
         
         private double _incDeltaAreaLimitSF;
         
@@ -91,49 +85,30 @@ namespace SiriusQualityMaizeLAI
         public MaizeLAIState(MaizeLAIState toCopy)
         {
             _LER = toCopy.LER;
-
             _newLeafHasAppeared = toCopy.newLeafHasAppeared;
-
             _leafNumber = toCopy.leafNumber;
-
             _finalLeafNumber = toCopy.finalLeafNumber;
-
             _IncDeltaArea = toCopy._IncDeltaArea;
-
             _availableN = toCopy._availableN;
-
             _FPAW = toCopy.FPAW;
-
-            _isPotentialLAI = toCopy.isPotentialLAI;
-
             _VPDairCanopy = toCopy.VPDairCanopy;
-
-            _DSF = toCopy.DSF;
-
-            _DEF = toCopy.DEF;
-
             _incDeltaAreaLimitSF = toCopy.incDeltaAreaLimitSF;
-
             _potentialIncDeltaArea = toCopy.potentialIncDeltaArea;
 
             _TCanopyHourly = new double[24];
             _VPDeq = new double[24];
             _hLER = new double[24];
+
             for (int i = 0; i < 24; i++)
             {
-
                 _TCanopyHourly[i] = toCopy._TCanopyHourly[i];
-
                 _VPDeq[i] = toCopy._VPDeq[i];
-
                 _hLER[i] = toCopy.hLER[i];
             }
 
 
             _cumulTTPHenoMaize = toCopy.cumulTTPHenoMaize;
-
             _deltaTTPhenoMaize = toCopy.deltaTTPhenoMaize;
-
             _radIntercepted = toCopy._radIntercepted;
 
             System.Collections.Generic.List<double> _WaterLimitedPotDeltaAIList = new List<double>(toCopy._WaterLimitedPotDeltaAIList);
@@ -195,19 +170,6 @@ namespace SiriusQualityMaizeLAI
         }
         
         /// <summary> </summary>
-        public int isPotentialLAI
-        {
-            get
-            {
-                return this._isPotentialLAI;
-            }
-            set
-            {
-                this._isPotentialLAI = value;
-            }
-        }
-        
-        /// <summary> </summary>
         public double VPDairCanopy
         {
             get
@@ -217,32 +179,6 @@ namespace SiriusQualityMaizeLAI
             set
             {
                 this._VPDairCanopy = value;
-            }
-        }
-        
-        /// <summary>drought senescence factor</summary>
-        public double DSF
-        {
-            get
-            {
-                return this._DSF;
-            }
-            set
-            {
-                this._DSF = value;
-            }
-        }
-        
-        /// <summary>drought expansion factor</summary>
-        public double DEF
-        {
-            get
-            {
-                return this._DEF;
-            }
-            set
-            {
-                this._DEF = value;
             }
         }
         
@@ -452,10 +388,7 @@ namespace SiriusQualityMaizeLAI
             _leafNumber = default(System.Double);
             _finalLeafNumber = default(System.Double);
             _FPAW = default(System.Double);
-            _isPotentialLAI = default(System.Int32);
             _VPDairCanopy = default(System.Double);
-            _DSF = default(System.Double);
-            _DEF = default(System.Double);
             _incDeltaAreaLimitSF = default(System.Double);
             _WaterLimitedPotDeltaAIList = new List<double>();
             _potentialIncDeltaArea = default(System.Double);

@@ -3,7 +3,7 @@
  //Author:Loic Manceau loic.manceau@inra.fr
  //Institution:INRA
  //Author of revision: 
- //Date first release:6/7/2019
+ //Date first release:
  //Date of revision:
 
 using System;
@@ -115,22 +115,8 @@ namespace SiriusQualityMaizeLAI.Strategies
 				 _parameters0_0.Add(v33);
 				VarInfo v34 = new CompositeStrategyVarInfo(_deltalaimaize,"radBase");
 				 _parameters0_0.Add(v34);
-				VarInfo v35 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"LowerFPAWexp");
+				VarInfo v35 = new CompositeStrategyVarInfo(_updateleafarea,"SLNcri");
 				 _parameters0_0.Add(v35);
-				VarInfo v36 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"UpperFPAWexp");
-				 _parameters0_0.Add(v36);
-				VarInfo v37 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"MaxDSF");
-				 _parameters0_0.Add(v37);
-				VarInfo v38 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"LowerFPAWsen");
-				 _parameters0_0.Add(v38);
-				VarInfo v39 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"UpperFPAWsen");
-				 _parameters0_0.Add(v39);
-				VarInfo v40 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"UpperVPD");
-				 _parameters0_0.Add(v40);
-				VarInfo v41 = new CompositeStrategyVarInfo(_leafexpansiondroughtfactor,"LowerVPD");
-				 _parameters0_0.Add(v41);
-				VarInfo v42 = new CompositeStrategyVarInfo(_updateleafarea,"SLNcri");
-				 _parameters0_0.Add(v42);
 				mo0_0.Parameters=_parameters0_0;
 				//Inputs
 				List<PropertyDescription> _inputs0_0 = new List<PropertyDescription>();
@@ -141,18 +127,17 @@ namespace SiriusQualityMaizeLAI.Strategies
 				//Associated strategies
 				List<string> lAssStrat0_0 = new List<string>();
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcBaseWidth).FullName);
-				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcFullyExpTT).FullName);
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcFracPopn).FullName);
+				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcFullyExpTT).FullName);
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcInitTT).FullName);
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcLER).FullName);
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcLERCoeff).FullName);
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcLiguleTT).FullName);
-				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcStartExpTT).FullName);
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcStartEnlargeTT).FullName);
+				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcStartExpTT).FullName);
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcStopEnlargeTT).FullName);
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.calcTipTT).FullName);
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.DeltaLAIMaize).FullName);
-				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor).FullName);
 				lAssStrat0_0.Add(typeof(SiriusQualityMaizeLAI.Strategies.UpdateLeafArea).FullName);
 				mo0_0.AssociatedStrategies = lAssStrat0_0;
 				//Adding the modeling options to the modeling options manager
@@ -237,7 +222,7 @@ namespace SiriusQualityMaizeLAI.Strategies
 					
 				_pd = new CRA.ModelLayer.MetadataTypes.PublisherData();
 				_pd.Add("Creator", "loic.manceau@inra.fr");
-				_pd.Add("Date", "6/7/2019");
+				_pd.Add("Date", "");
 				_pd.Add("Publisher", "INRA");
 			}
 
@@ -528,69 +513,6 @@ namespace SiriusQualityMaizeLAI.Strategies
 						_deltalaimaize.radBase=value;
 				}
 			}
-			public Double LowerFPAWexp
-			{ 
-				get {
-						return _leafexpansiondroughtfactor.LowerFPAWexp ;
-				}
-				set {
-						_leafexpansiondroughtfactor.LowerFPAWexp=value;
-				}
-			}
-			public Double UpperFPAWexp
-			{ 
-				get {
-						return _leafexpansiondroughtfactor.UpperFPAWexp ;
-				}
-				set {
-						_leafexpansiondroughtfactor.UpperFPAWexp=value;
-				}
-			}
-			public Double MaxDSF
-			{ 
-				get {
-						return _leafexpansiondroughtfactor.MaxDSF ;
-				}
-				set {
-						_leafexpansiondroughtfactor.MaxDSF=value;
-				}
-			}
-			public Double LowerFPAWsen
-			{ 
-				get {
-						return _leafexpansiondroughtfactor.LowerFPAWsen ;
-				}
-				set {
-						_leafexpansiondroughtfactor.LowerFPAWsen=value;
-				}
-			}
-			public Double UpperFPAWsen
-			{ 
-				get {
-						return _leafexpansiondroughtfactor.UpperFPAWsen ;
-				}
-				set {
-						_leafexpansiondroughtfactor.UpperFPAWsen=value;
-				}
-			}
-			public Double UpperVPD
-			{ 
-				get {
-						return _leafexpansiondroughtfactor.UpperVPD ;
-				}
-				set {
-						_leafexpansiondroughtfactor.UpperVPD=value;
-				}
-			}
-			public Double LowerVPD
-			{ 
-				get {
-						return _leafexpansiondroughtfactor.LowerVPD ;
-				}
-				set {
-						_leafexpansiondroughtfactor.LowerVPD=value;
-				}
-			}
 			public Double SLNcri
 			{ 
 				get {
@@ -614,18 +536,17 @@ namespace SiriusQualityMaizeLAI.Strategies
 				_modellingOptionsManager.SetParametersDefaultValue();
 				
 					_calcbasewidth.SetParametersDefaultValue();
-					_calcfullyexptt.SetParametersDefaultValue();
 					_calcfracpopn.SetParametersDefaultValue();
+					_calcfullyexptt.SetParametersDefaultValue();
 					_calcinittt.SetParametersDefaultValue();
 					_calcler.SetParametersDefaultValue();
 					_calclercoeff.SetParametersDefaultValue();
 					_calcligulett.SetParametersDefaultValue();
-					_calcstartexptt.SetParametersDefaultValue();
 					_calcstartenlargett.SetParametersDefaultValue();
+					_calcstartexptt.SetParametersDefaultValue();
 					_calcstopenlargett.SetParametersDefaultValue();
 					_calctiptt.SetParametersDefaultValue();
 					_deltalaimaize.SetParametersDefaultValue();
-					_leafexpansiondroughtfactor.SetParametersDefaultValue();
 					_updateleafarea.SetParametersDefaultValue(); 
 
 					//GENERATED CODE END - PLACE YOUR CUSTOM CODE BELOW - Section5
@@ -843,55 +764,6 @@ namespace SiriusQualityMaizeLAI.Strategies
 					get { return SiriusQualityMaizeLAI.Strategies.DeltaLAIMaize.radBaseVarInfo; }
 				}
 				/// <summary> 
-				///LowerFPAWexp VarInfo definition
-				/// </summary>
-				public static VarInfo LowerFPAWexpVarInfo
-				{
-					get { return SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor.LowerFPAWexpVarInfo; }
-				}
-				/// <summary> 
-				///UpperFPAWexp VarInfo definition
-				/// </summary>
-				public static VarInfo UpperFPAWexpVarInfo
-				{
-					get { return SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor.UpperFPAWexpVarInfo; }
-				}
-				/// <summary> 
-				///MaxDSF VarInfo definition
-				/// </summary>
-				public static VarInfo MaxDSFVarInfo
-				{
-					get { return SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor.MaxDSFVarInfo; }
-				}
-				/// <summary> 
-				///LowerFPAWsen VarInfo definition
-				/// </summary>
-				public static VarInfo LowerFPAWsenVarInfo
-				{
-					get { return SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor.LowerFPAWsenVarInfo; }
-				}
-				/// <summary> 
-				///UpperFPAWsen VarInfo definition
-				/// </summary>
-				public static VarInfo UpperFPAWsenVarInfo
-				{
-					get { return SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor.UpperFPAWsenVarInfo; }
-				}
-				/// <summary> 
-				///UpperVPD VarInfo definition
-				/// </summary>
-				public static VarInfo UpperVPDVarInfo
-				{
-					get { return SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor.UpperVPDVarInfo; }
-				}
-				/// <summary> 
-				///LowerVPD VarInfo definition
-				/// </summary>
-				public static VarInfo LowerVPDVarInfo
-				{
-					get { return SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor.LowerVPDVarInfo; }
-				}
-				/// <summary> 
 				///SLNcri VarInfo definition
 				/// </summary>
 				public static VarInfo SLNcriVarInfo
@@ -922,18 +794,17 @@ namespace SiriusQualityMaizeLAI.Strategies
 					
 					string ret = "";
 					 ret += _calcbasewidth.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcBaseWidth");
-					 ret += _calcfullyexptt.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcFullyExpTT");
 					 ret += _calcfracpopn.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcFracPopn");
+					 ret += _calcfullyexptt.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcFullyExpTT");
 					 ret += _calcinittt.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcInitTT");
 					 ret += _calcler.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcLER");
 					 ret += _calclercoeff.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcLERCoeff");
 					 ret += _calcligulett.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcLiguleTT");
-					 ret += _calcstartexptt.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcStartExpTT");
 					 ret += _calcstartenlargett.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcStartEnlargeTT");
+					 ret += _calcstartexptt.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcStartExpTT");
 					 ret += _calcstopenlargett.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcStopEnlargeTT");
 					 ret += _calctiptt.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcTipTT");
 					 ret += _deltalaimaize.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.DeltaLAIMaize");
-					 ret += _leafexpansiondroughtfactor.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor");
 					 ret += _updateleafarea.TestPostConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.UpdateLeafArea");
 					if (ret != "") { pre.TestsOut(ret, true, "   postconditions tests of associated classes"); }
 
@@ -980,18 +851,17 @@ namespace SiriusQualityMaizeLAI.Strategies
 					
 					string ret = "";
 					 ret += _calcbasewidth.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcBaseWidth");
-					 ret += _calcfullyexptt.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcFullyExpTT");
 					 ret += _calcfracpopn.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcFracPopn");
+					 ret += _calcfullyexptt.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcFullyExpTT");
 					 ret += _calcinittt.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcInitTT");
 					 ret += _calcler.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcLER");
 					 ret += _calclercoeff.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcLERCoeff");
 					 ret += _calcligulett.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcLiguleTT");
-					 ret += _calcstartexptt.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcStartExpTT");
 					 ret += _calcstartenlargett.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcStartEnlargeTT");
+					 ret += _calcstartexptt.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcStartExpTT");
 					 ret += _calcstopenlargett.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcStopEnlargeTT");
 					 ret += _calctiptt.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.calcTipTT");
 					 ret += _deltalaimaize.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.DeltaLAIMaize");
-					 ret += _leafexpansiondroughtfactor.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor");
 					 ret += _updateleafarea.TestPreConditions(maizelaistate,maizeleafstate,maizeleafstate1, "strategy SiriusQualityMaizeLAI.Strategies.UpdateLeafArea");
 					if (ret != "") { pre.TestsOut(ret, true, "   preconditions tests of associated classes"); }
 
@@ -1068,18 +938,17 @@ namespace SiriusQualityMaizeLAI.Strategies
 
 			//Declaration of the associated strategies
 			SiriusQualityMaizeLAI.Strategies.calcBaseWidth _calcbasewidth = new SiriusQualityMaizeLAI.Strategies.calcBaseWidth();
-			SiriusQualityMaizeLAI.Strategies.calcFullyExpTT _calcfullyexptt = new SiriusQualityMaizeLAI.Strategies.calcFullyExpTT();
 			SiriusQualityMaizeLAI.Strategies.calcFracPopn _calcfracpopn = new SiriusQualityMaizeLAI.Strategies.calcFracPopn();
+			SiriusQualityMaizeLAI.Strategies.calcFullyExpTT _calcfullyexptt = new SiriusQualityMaizeLAI.Strategies.calcFullyExpTT();
 			SiriusQualityMaizeLAI.Strategies.calcInitTT _calcinittt = new SiriusQualityMaizeLAI.Strategies.calcInitTT();
 			SiriusQualityMaizeLAI.Strategies.calcLER _calcler = new SiriusQualityMaizeLAI.Strategies.calcLER();
 			SiriusQualityMaizeLAI.Strategies.calcLERCoeff _calclercoeff = new SiriusQualityMaizeLAI.Strategies.calcLERCoeff();
 			SiriusQualityMaizeLAI.Strategies.calcLiguleTT _calcligulett = new SiriusQualityMaizeLAI.Strategies.calcLiguleTT();
-			SiriusQualityMaizeLAI.Strategies.calcStartExpTT _calcstartexptt = new SiriusQualityMaizeLAI.Strategies.calcStartExpTT();
 			SiriusQualityMaizeLAI.Strategies.calcStartEnlargeTT _calcstartenlargett = new SiriusQualityMaizeLAI.Strategies.calcStartEnlargeTT();
+			SiriusQualityMaizeLAI.Strategies.calcStartExpTT _calcstartexptt = new SiriusQualityMaizeLAI.Strategies.calcStartExpTT();
 			SiriusQualityMaizeLAI.Strategies.calcStopEnlargeTT _calcstopenlargett = new SiriusQualityMaizeLAI.Strategies.calcStopEnlargeTT();
 			SiriusQualityMaizeLAI.Strategies.calcTipTT _calctiptt = new SiriusQualityMaizeLAI.Strategies.calcTipTT();
 			SiriusQualityMaizeLAI.Strategies.DeltaLAIMaize _deltalaimaize = new SiriusQualityMaizeLAI.Strategies.DeltaLAIMaize();
-			SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor _leafexpansiondroughtfactor = new SiriusQualityMaizeLAI.Strategies.LeafExpansionDroughtFactor();
 			SiriusQualityMaizeLAI.Strategies.UpdateLeafArea _updateleafarea = new SiriusQualityMaizeLAI.Strategies.UpdateLeafArea();
 
 			//Call of the associated strategies
@@ -1095,7 +964,6 @@ namespace SiriusQualityMaizeLAI.Strategies
                 _calcbasewidth.Estimate(maizelaistate, maizeleafstate, maizeleafstate1, actevents);
                 _calcstartenlargett.Estimate(maizelaistate, maizeleafstate, maizeleafstate1, actevents);
                 _calcstopenlargett.Estimate(maizelaistate, maizeleafstate, maizeleafstate1, actevents);
-                _leafexpansiondroughtfactor.Estimate(maizelaistate, maizeleafstate, maizeleafstate1, actevents);
                 _deltalaimaize.Estimate(maizelaistate, maizeleafstate, maizeleafstate1, actevents);
                 resetDeltaAI(maizeleafstate);
 			}
@@ -1157,13 +1025,6 @@ namespace SiriusQualityMaizeLAI.Strategies
                 plantDensity = toCopy.plantDensity;
                 SensiRad = toCopy.SensiRad;
                 radBase = toCopy.radBase;
-                LowerFPAWexp = toCopy.LowerFPAWexp;
-                UpperFPAWexp = toCopy.UpperFPAWexp;
-                MaxDSF = toCopy.MaxDSF;
-                LowerFPAWsen = toCopy.LowerFPAWsen;
-                UpperFPAWsen = toCopy.UpperFPAWsen;
-                UpperVPD = toCopy.UpperVPD;
-                LowerVPD = toCopy.LowerVPD;
                 SLNcri = toCopy.SLNcri;
                 ttinitflo = toCopy.ttinitflo;
 

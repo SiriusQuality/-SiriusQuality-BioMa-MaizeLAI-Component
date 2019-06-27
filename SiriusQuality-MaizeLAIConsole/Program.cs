@@ -204,8 +204,6 @@ namespace SiriusQuality_MaizeLAIConsole
 
                 bool HasNewLeafAppeared = false;
 
-                bool isPotentialLAI = false;
-
                 double finalLeafNumber = 0;
 
                 #endregion
@@ -321,7 +319,7 @@ namespace SiriusQuality_MaizeLAIConsole
                     #endregion
 
                     //Call of the component
-                    maizelaiwrapper_.Estimate(previousLeafNumber, HasNewLeafAppeared, finalLeafNumber, leafNumber[iday], FPAW[iday], isPotentialLAI,
+                    maizelaiwrapper_.Estimate(previousLeafNumber, HasNewLeafAppeared, finalLeafNumber, leafNumber[iday], FPAW[iday],
                         AllLeaves, VPDairCanopy[iday], cumulTTPhenoMaize, deltaTTPhenoMaize[iday], TCanopyHourly[iday].ToArray(), VPDeq[iday].ToArray(), radInterceptedMaize[iday]);
 
                     #region Grow/Kill leaves

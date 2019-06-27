@@ -65,17 +65,6 @@ namespace UnitTestMaizeLAI
         double plantDensity = 7.5;//plant/m²
         double SLNcri = 1.0;//g(N)/m²(leaf)
 
-        //Drought Stress Factors
-        double UpperFPAWexp = 0.5;//Dimensionless
-        double LowerFPAWexp = 0.1;//Dimensionless
-        double UpperVPD = 45.0;//Dimensionless
-        double LowerVPD = 15.0;//Dimensionless
-        /********/
-        //not used (parameter for senescence acceleration stress factor), no senescence implemented yet
-        double MaxDSF = 4.5;
-        double UpperFPAWsen = 0.4;
-        double LowerFPAWsen = 0.1;
-        /********/
 
         #endregion
 
@@ -119,13 +108,6 @@ namespace UnitTestMaizeLAI
             maizeLAI_.plantDensity = plantDensity;
             maizeLAI_.SensiRad = SensiRad;
             maizeLAI_.radBase = radBase;
-            maizeLAI_.LowerFPAWexp = LowerFPAWexp;
-            maizeLAI_.UpperFPAWexp = UpperFPAWexp;
-            maizeLAI_.MaxDSF = MaxDSF;
-            maizeLAI_.LowerFPAWsen = LowerFPAWsen;
-            maizeLAI_.UpperFPAWsen = UpperFPAWsen;
-            maizeLAI_.UpperVPD = UpperVPD;
-            maizeLAI_.LowerVPD = LowerVPD;
             maizeLAI_.SLNcri = SLNcri;
             maizeLAI_.ttinitflo = ttinitflo;
 
@@ -717,8 +699,6 @@ namespace UnitTestMaizeLAI
 
             bool HasNewLeafAppeared = false;
 
-            bool isPotentialLAI = false;
-
             double finalLeafNumber = 0;
 
             double previousLeafNumber = 0.0;
@@ -795,7 +775,6 @@ namespace UnitTestMaizeLAI
                 maizeLaistate_.finalLeafNumber = finalLeafNumber;
                 maizeLaistate_.leafNumber = leafNumber[iday];
                 maizeLaistate_.FPAW = FPAW[iday];
-                maizeLaistate_.isPotentialLAI = isPotentialLAI ? 1 : 0;
                 maizeLaistate_.cumulTTPHenoMaize = cumulTTPhenoMaize;
                 maizeLaistate_.deltaTTPhenoMaize = deltaTTPhenoMaize[iday];
                 maizeLaistate_.VPDairCanopy = VPDairCanopy[iday];
