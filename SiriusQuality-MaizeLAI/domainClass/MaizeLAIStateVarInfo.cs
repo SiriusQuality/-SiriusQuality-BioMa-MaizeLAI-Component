@@ -17,7 +17,7 @@
 /// INRA
 /// 
 /// 
-/// 6/27/2019 4:30:10 PM
+/// 7/2/2019 9:35:22 AM
 /// 
 namespace SiriusQualityMaizeLAI
 {
@@ -39,8 +39,6 @@ namespace SiriusQualityMaizeLAI
         static VarInfo _FPAW = new VarInfo();
         
         static VarInfo _VPDairCanopy = new VarInfo();
-        
-        static VarInfo _incDeltaAreaLimitSF = new VarInfo();
         
         static VarInfo _WaterLimitedPotDeltaAIList = new VarInfo();
         
@@ -145,15 +143,6 @@ namespace SiriusQualityMaizeLAI
             get
             {
                 return  _VPDairCanopy;
-            }
-        }
-        
-        /// <summary> </summary>
-        public static  VarInfo incDeltaAreaLimitSF
-        {
-            get
-            {
-                return  _incDeltaAreaLimitSF;
             }
         }
         
@@ -315,15 +304,6 @@ namespace SiriusQualityMaizeLAI
             _VPDairCanopy.Units = " ";
             _VPDairCanopy.URL = "http://";
             _VPDairCanopy.ValueType = VarInfoValueTypes.GetInstanceForName("Double");
-            //   
-            _incDeltaAreaLimitSF.Name = "incDeltaAreaLimitSF";
-            _incDeltaAreaLimitSF.Description = " ";
-            _incDeltaAreaLimitSF.MaxValue = 1D;
-            _incDeltaAreaLimitSF.MinValue = 0D;
-            _incDeltaAreaLimitSF.DefaultValue = 0D;
-            _incDeltaAreaLimitSF.Units = " ";
-            _incDeltaAreaLimitSF.URL = "http://";
-            _incDeltaAreaLimitSF.ValueType = VarInfoValueTypes.GetInstanceForName("Double");
             //   
             _WaterLimitedPotDeltaAIList.Name = "WaterLimitedPotDeltaAIList";
             _WaterLimitedPotDeltaAIList.Description = "list on each phytomer";

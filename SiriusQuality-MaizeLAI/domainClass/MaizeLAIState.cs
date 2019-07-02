@@ -17,7 +17,7 @@
 /// INRA
 /// 
 /// 
-/// 6/27/2019 4:30:10 PM
+/// 7/2/2019 9:35:22 AM
 /// 
 namespace SiriusQualityMaizeLAI
 {
@@ -43,8 +43,6 @@ namespace SiriusQualityMaizeLAI
         private double _FPAW;
         
         private double _VPDairCanopy;
-        
-        private double _incDeltaAreaLimitSF;
         
         private System.Collections.Generic.List<double> _WaterLimitedPotDeltaAIList = new List<double>();
         
@@ -92,7 +90,6 @@ namespace SiriusQualityMaizeLAI
             _availableN = toCopy._availableN;
             _FPAW = toCopy.FPAW;
             _VPDairCanopy = toCopy.VPDairCanopy;
-            _incDeltaAreaLimitSF = toCopy.incDeltaAreaLimitSF;
             _potentialIncDeltaArea = toCopy.potentialIncDeltaArea;
 
             _TCanopyHourly = new double[24];
@@ -113,6 +110,7 @@ namespace SiriusQualityMaizeLAI
 
             System.Collections.Generic.List<double> _WaterLimitedPotDeltaAIList = new List<double>(toCopy._WaterLimitedPotDeltaAIList);
         }
+
 
         #endregion
         
@@ -179,19 +177,6 @@ namespace SiriusQualityMaizeLAI
             set
             {
                 this._VPDairCanopy = value;
-            }
-        }
-        
-        /// <summary> </summary>
-        public double incDeltaAreaLimitSF
-        {
-            get
-            {
-                return this._incDeltaAreaLimitSF;
-            }
-            set
-            {
-                this._incDeltaAreaLimitSF = value;
             }
         }
         
@@ -389,7 +374,6 @@ namespace SiriusQualityMaizeLAI
             _finalLeafNumber = default(System.Double);
             _FPAW = default(System.Double);
             _VPDairCanopy = default(System.Double);
-            _incDeltaAreaLimitSF = default(System.Double);
             _WaterLimitedPotDeltaAIList = new List<double>();
             _potentialIncDeltaArea = default(System.Double);
             _TCanopyHourly = new double[24];

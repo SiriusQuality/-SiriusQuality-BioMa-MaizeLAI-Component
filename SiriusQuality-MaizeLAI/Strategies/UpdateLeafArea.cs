@@ -26,8 +26,7 @@ using CRA.AgroManagement;
 //To make this project compile please add the reference to assembly: CRA.ModelLayer, Version=1.0.5212.29139, Culture=neutral, PublicKeyToken=null
 //To make this project compile please add the reference to assembly: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 //To make this project compile please add the reference to assembly: CRA.AgroManagement2014, Version=0.8.0.0, Culture=neutral, PublicKeyToken=null
-//To make this project compile please add the reference to assembly: System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-//To make this project compile please add the reference to assembly: System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;
+//To make this project compile please add the reference to assembly: System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;
 
 namespace SiriusQualityMaizeLAI.Strategies
 {
@@ -65,39 +64,39 @@ namespace SiriusQualityMaizeLAI.Strategies
 				List<PropertyDescription> _inputs0_0 = new List<PropertyDescription>();
 				PropertyDescription pd1 = new PropertyDescription();
 				pd1.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLAIState);
-				pd1.PropertyName = "incDeltaAreaLimitSF";
-				pd1.PropertyType = (( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.incDeltaAreaLimitSF)).ValueType.TypeForCurrentValue;
-				pd1.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.incDeltaAreaLimitSF);
+				pd1.PropertyName = "availableN";
+				pd1.PropertyType = (( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.availableN)).ValueType.TypeForCurrentValue;
+				pd1.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.availableN);
 				_inputs0_0.Add(pd1);
 				PropertyDescription pd2 = new PropertyDescription();
-				pd2.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLAIState);
-				pd2.PropertyName = "availableN";
-				pd2.PropertyType = (( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.availableN)).ValueType.TypeForCurrentValue;
-				pd2.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.availableN);
+				pd2.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLeafState);
+				pd2.PropertyName = "MaxAI";
+				pd2.PropertyType = (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.MaxAI)).ValueType.TypeForCurrentValue;
+				pd2.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.MaxAI);
 				_inputs0_0.Add(pd2);
 				PropertyDescription pd3 = new PropertyDescription();
 				pd3.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLeafState);
-				pd3.PropertyName = "MaxAI";
-				pd3.PropertyType = (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.MaxAI)).ValueType.TypeForCurrentValue;
-				pd3.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.MaxAI);
+				pd3.PropertyName = "LaminaAI";
+				pd3.PropertyType = (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.LaminaAI)).ValueType.TypeForCurrentValue;
+				pd3.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.LaminaAI);
 				_inputs0_0.Add(pd3);
 				PropertyDescription pd4 = new PropertyDescription();
 				pd4.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLeafState);
-				pd4.PropertyName = "LaminaAI";
-				pd4.PropertyType = (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.LaminaAI)).ValueType.TypeForCurrentValue;
-				pd4.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.LaminaAI);
+				pd4.PropertyName = "State";
+				pd4.PropertyType = (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.State)).ValueType.TypeForCurrentValue;
+				pd4.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.State);
 				_inputs0_0.Add(pd4);
 				PropertyDescription pd5 = new PropertyDescription();
-				pd5.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLeafState);
-				pd5.PropertyName = "State";
-				pd5.PropertyType = (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.State)).ValueType.TypeForCurrentValue;
-				pd5.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.State);
+				pd5.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLAIState);
+				pd5.PropertyName = "WaterLimitedPotDeltaAIList";
+				pd5.PropertyType = (( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.WaterLimitedPotDeltaAIList)).ValueType.TypeForCurrentValue;
+				pd5.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.WaterLimitedPotDeltaAIList);
 				_inputs0_0.Add(pd5);
 				PropertyDescription pd6 = new PropertyDescription();
 				pd6.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLAIState);
-				pd6.PropertyName = "WaterLimitedPotDeltaAIList";
-				pd6.PropertyType = (( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.WaterLimitedPotDeltaAIList)).ValueType.TypeForCurrentValue;
-				pd6.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.WaterLimitedPotDeltaAIList);
+				pd6.PropertyName = "potentialIncDeltaArea";
+				pd6.PropertyType = (( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.potentialIncDeltaArea)).ValueType.TypeForCurrentValue;
+				pd6.PropertyVarInfo =( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.potentialIncDeltaArea);
 				_inputs0_0.Add(pd6);
 				mo0_0.Inputs=_inputs0_0;
 				//Outputs
@@ -395,30 +394,30 @@ namespace SiriusQualityMaizeLAI.Strategies
 				{
 					//Set current values of the inputs to the static VarInfo representing the input properties of the domain classes				
 					
-					SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.incDeltaAreaLimitSF.CurrentValue=maizelaistate.incDeltaAreaLimitSF;
 					SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.availableN.CurrentValue=maizelaistate.availableN;
 					SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.MaxAI.CurrentValue=maizeleafstate.MaxAI;
 					SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.LaminaAI.CurrentValue=maizeleafstate.LaminaAI;
 					SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.State.CurrentValue=maizeleafstate.State;
 					SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.WaterLimitedPotDeltaAIList.CurrentValue=maizelaistate.WaterLimitedPotDeltaAIList;
+					SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.potentialIncDeltaArea.CurrentValue=maizelaistate.potentialIncDeltaArea;
 
 					//Create the collection of the conditions to test
 					ConditionsCollection prc = new ConditionsCollection();
 					Preconditions pre = new Preconditions();
             
 					
-					RangeBasedCondition r1 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.incDeltaAreaLimitSF);
-					if(r1.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.incDeltaAreaLimitSF.ValueType)){prc.AddCondition(r1);}
-					RangeBasedCondition r2 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.availableN);
-					if(r2.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.availableN.ValueType)){prc.AddCondition(r2);}
-					RangeBasedCondition r3 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.MaxAI);
-					if(r3.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.MaxAI.ValueType)){prc.AddCondition(r3);}
-					RangeBasedCondition r4 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.LaminaAI);
-					if(r4.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.LaminaAI.ValueType)){prc.AddCondition(r4);}
-					RangeBasedCondition r5 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.State);
-					if(r5.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.State.ValueType)){prc.AddCondition(r5);}
-					RangeBasedCondition r6 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.WaterLimitedPotDeltaAIList);
-					if(r6.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.WaterLimitedPotDeltaAIList.ValueType)){prc.AddCondition(r6);}
+					RangeBasedCondition r1 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.availableN);
+					if(r1.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.availableN.ValueType)){prc.AddCondition(r1);}
+					RangeBasedCondition r2 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.MaxAI);
+					if(r2.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.MaxAI.ValueType)){prc.AddCondition(r2);}
+					RangeBasedCondition r3 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.LaminaAI);
+					if(r3.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.LaminaAI.ValueType)){prc.AddCondition(r3);}
+					RangeBasedCondition r4 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.State);
+					if(r4.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.State.ValueType)){prc.AddCondition(r4);}
+					RangeBasedCondition r5 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.WaterLimitedPotDeltaAIList);
+					if(r5.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.WaterLimitedPotDeltaAIList.ValueType)){prc.AddCondition(r5);}
+					RangeBasedCondition r6 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.potentialIncDeltaArea);
+					if(r6.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLAIStateVarInfo.potentialIncDeltaArea.ValueType)){prc.AddCondition(r6);}
 					prc.AddCondition(new RangeBasedCondition(_modellingOptionsManager.GetParameterByName("SLNcri")));
 
 					
@@ -459,21 +458,21 @@ namespace SiriusQualityMaizeLAI.Strategies
 			/// </summary>
 			public void Estimate(SiriusQualityMaizeLAI.MaizeLAIState maizelaistate,SiriusQualityMaizeLAI.MaizeLeafState maizeleafstate,SiriusQualityMaizeLAI.MaizeLeafState maizeleafstate1,CRA.AgroManagement.ActEvents actevents)
 			{
-                try
-                {
+				try
+				{
 					CalculateModel(maizelaistate,maizeleafstate,maizeleafstate1,actevents);
 
 					//Uncomment the next line to use the trace
 					//TraceStrategies.TraceEvent(System.Diagnostics.TraceEventType.Verbose, 1005,"Strategy: " + this.GetType().Name + " - Model executed");
-                }
-                catch (Exception exception)
-                {
-                    //Uncomment the next line to use the trace
-                    //TraceStrategies.TraceEvent(System.Diagnostics.TraceEventType.Error, 1003,		"Strategy: " + this.GetType().Name + " - Unhandled exception running model");
+				}
+				catch (Exception exception)
+				{
+					//Uncomment the next line to use the trace
+					//TraceStrategies.TraceEvent(System.Diagnostics.TraceEventType.Error, 1003,		"Strategy: " + this.GetType().Name + " - Unhandled exception running model");
 
-                    string msg = "Error in component SiriusQualityMaizeLAI.Strategies, strategy: " + this.GetType().Name + ": Unhandled exception running model. "+exception.GetType().FullName+" - "+exception.Message;				
-                    throw new Exception(msg, exception);
-                }
+					string msg = "Error in component SiriusQualityMaizeLAI.Strategies, strategy: " + this.GetType().Name + ": Unhandled exception running model. "+exception.GetType().FullName+" - "+exception.Message;				
+					throw new Exception(msg, exception);
+				}
 			}
 
 		
@@ -488,13 +487,13 @@ namespace SiriusQualityMaizeLAI.Strategies
                 if (maizelaistate.potentialIncDeltaArea > 0.0)
                 {
 
-                    if (maizelaistate.incDeltaAreaLimitSF == 0.0)
+                    if (maizelaistate.potentialIncDeltaArea <= 0.0)
                     {
                         maizelaistate.IncDeltaArea = 0;
                     }
                     else
                     {
-                        maizelaistate.IncDeltaArea = maizelaistate.incDeltaAreaLimitSF * Math.Min(1.0, maizelaistate.availableN / (maizelaistate.incDeltaAreaLimitSF * SLNcri));
+                        maizelaistate.IncDeltaArea = maizelaistate.potentialIncDeltaArea * Math.Min(1.0, maizelaistate.availableN / (maizelaistate.potentialIncDeltaArea * SLNcri));
                         IsNumber(maizelaistate.IncDeltaArea);
 
                     }

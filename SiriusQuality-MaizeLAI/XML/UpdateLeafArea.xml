@@ -3,7 +3,7 @@
   <Global>
     <SimpleStrategy>checked</SimpleStrategy>
     <CompositeStrategy />
-    <DataInterfacesDLL>C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
+    <DataInterfacesDLL>C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\SiriusQuality-MaizeLAI.dll</DataInterfacesDLL>
     <StrategiesDLL />
     <IStrategyComponentName>IStrategySiriusQualityMaizeLAI</IStrategyComponentName>
   </Global>
@@ -24,10 +24,6 @@
     <DateRevision />
   </General>
   <Inputs>
-    <Variable>incDeltaAreaLimitSF</Variable>
-    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
-  </Inputs>
-  <Inputs>
     <Variable>availableN</Variable>
     <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
   </Inputs>
@@ -45,6 +41,10 @@
   </Inputs>
   <Inputs>
     <Variable>WaterLimitedPotDeltaAIList</Variable>
+    <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
+  </Inputs>
+  <Inputs>
+    <Variable>potentialIncDeltaArea</Variable>
     <DomainClass>maizelaistate - SiriusQualityMaizeLAI.MaizeLAIState</DomainClass>
   </Inputs>
   <Outputs>
@@ -90,8 +90,5 @@
   </LoadedAssemblies>
   <LoadedAssemblies>
     <Name>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
-  </LoadedAssemblies>
-  <LoadedAssemblies>
-    <Name>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Name>
   </LoadedAssemblies>
 </StrategyDefinition>

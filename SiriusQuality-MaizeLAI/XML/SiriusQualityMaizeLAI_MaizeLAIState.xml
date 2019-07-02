@@ -83,16 +83,6 @@
     <URL>http://</URL>
   </VarInfoVariables>
   <VarInfoVariables>
-    <Name>incDeltaAreaLimitSF</Name>
-    <MinValue>0</MinValue>
-    <MaxValue>1</MaxValue>
-    <DefaultValue>0</DefaultValue>
-    <Units xml:space="preserve"> </Units>
-    <Type>double</Type>
-    <Description xml:space="preserve"> </Description>
-    <URL>http://</URL>
-  </VarInfoVariables>
-  <VarInfoVariables>
     <Name>WaterLimitedPotDeltaAIList</Name>
     <MinValue>0</MinValue>
     <MaxValue>0</MaxValue>

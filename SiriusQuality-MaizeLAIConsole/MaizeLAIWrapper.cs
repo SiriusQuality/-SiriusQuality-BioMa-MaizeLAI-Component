@@ -64,8 +64,6 @@ namespace SiriusQuality_MaizeLAIConsole
 
         public List<int> getIsPrematurelyDyingList(){ return maizeLeafState_.isPrematurelyDying; }
 
-        public double getIncDeltaAreaLimitSF(){ return maizeLaiState_.incDeltaAreaLimitSF; }
-
         public double getPotentialIncDeltaArea(){ return maizeLaiState_.potentialIncDeltaArea; }
 
         public double LER { get { return maizeLaiState_.LER; } }
@@ -194,8 +192,6 @@ namespace SiriusQuality_MaizeLAIConsole
         public void UpdateAreas(double availN, List<LeafLayer> All)
         {
             maizeLaiState_.availableN = availN;
-
-            maizeLaiState_.incDeltaAreaLimitSF = getIncDeltaAreaLimitSF();
             maizeLaiState_.potentialIncDeltaArea = getPotentialIncDeltaArea();
             for (int ilayer = 0; ilayer < All.Count; ilayer++) maizeLaiState_.WaterLimitedPotDeltaAIList[ilayer] = getWaterLimitedPotDeltaAI(ilayer);
 

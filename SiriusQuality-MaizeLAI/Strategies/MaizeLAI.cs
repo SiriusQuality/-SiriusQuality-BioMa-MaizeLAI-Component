@@ -3,7 +3,7 @@
  //Author:Loic Manceau loic.manceau@inra.fr
  //Institution:INRA
  //Author of revision: 
- //Date first release:
+ //Date first release:7/2/2019
  //Date of revision:
 
 using System;
@@ -222,7 +222,7 @@ namespace SiriusQualityMaizeLAI.Strategies
 					
 				_pd = new CRA.ModelLayer.MetadataTypes.PublisherData();
 				_pd.Add("Creator", "loic.manceau@inra.fr");
-				_pd.Add("Date", "");
+				_pd.Add("Date", "7/2/2019");
 				_pd.Add("Publisher", "INRA");
 			}
 

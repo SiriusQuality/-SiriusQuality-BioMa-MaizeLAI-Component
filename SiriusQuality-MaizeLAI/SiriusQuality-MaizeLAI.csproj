@@ -68,7 +68,9 @@
     <Compile Include="API\TraceHelper.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="domainClass\MaizeLAIState.cs" />
+    <Compile Include="domainClass\MaizeLAIState.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="domainClass\MaizeLAIStateVarInfo.cs" />
     <Compile Include="domainClass\MaizeLeafState.cs" />
     <Compile Include="domainClass\MaizeLeafStateVarInfo.cs" />
