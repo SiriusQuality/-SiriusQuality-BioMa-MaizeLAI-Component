@@ -337,7 +337,7 @@ namespace SiriusQuality_MaizeLAIConsole
                     foreach (LeafLayer leaflayer in AllLeaves)
                     {
 
-                        #region Shoot Area Index increase/Decrease
+                        #region Shoot Area Index increase
 
                         ShootAI += leaflayer.DeltaAI;
 
@@ -353,15 +353,6 @@ namespace SiriusQuality_MaizeLAIConsole
 
                         #endregion
 
-                        #region Biomass decrease
-
-                        if (leaflayer.State == LeafState.Senescing)
-                        {
-                            leaflayer.DeltaDM = leaflayer.DeltaAI * specificWeight;
-                            ShootDM += leaflayer.DeltaDM;
-                        }
-
-                        #endregion
 
                         ileaf++;
                     }

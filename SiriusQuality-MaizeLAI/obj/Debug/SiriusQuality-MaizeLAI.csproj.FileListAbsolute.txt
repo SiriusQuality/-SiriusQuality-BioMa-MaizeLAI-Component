@@ -88,3 +88,4 @@ C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Compone
 C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\bin\Debug\CRA.ModelLayer.dll
 C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\obj\Debug\SiriusQuality-MaizeLAI.dll
 C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\obj\Debug\SiriusQuality-MaizeLAI.pdb
+C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\obj\Debug\SiriusQuality-MaizeLAI.csprojResolveAssemblyReference.cache
