@@ -872,7 +872,6 @@ namespace UnitTestMaizeLAI
             maizeLeafstate_.tipTT.Add(0.0);
             maizeLeafstate_.exposedArea.Add(0.0);
             maizeLeafstate_.PreviousState.Add(0);
-            maizeLeafstate_.isPrematurelyDying.Add(0);
             maizeLeafstate_.leafAge.Add(0.0);
             maizeLeafstate_.cumIntRad.Add(0.0);
             maizeLeafstate_.initialisationTT.Add(0.0);

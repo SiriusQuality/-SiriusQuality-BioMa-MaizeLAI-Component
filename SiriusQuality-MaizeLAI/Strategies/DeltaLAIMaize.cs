@@ -249,34 +249,28 @@ namespace SiriusQualityMaizeLAI.Strategies
 				_outputs0_0.Add(pd26);
 				PropertyDescription pd27 = new PropertyDescription();
 				pd27.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLeafState);
-				pd27.PropertyName = "isPrematurelyDying";
-				pd27.PropertyType =  (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.isPrematurelyDying)).ValueType.TypeForCurrentValue;
-				pd27.PropertyVarInfo =(  SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.isPrematurelyDying);
+				pd27.PropertyName = "cumIntRad";
+				pd27.PropertyType =  (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.cumIntRad)).ValueType.TypeForCurrentValue;
+				pd27.PropertyVarInfo =(  SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.cumIntRad);
 				_outputs0_0.Add(pd27);
 				PropertyDescription pd28 = new PropertyDescription();
 				pd28.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLeafState);
-				pd28.PropertyName = "cumIntRad";
-				pd28.PropertyType =  (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.cumIntRad)).ValueType.TypeForCurrentValue;
-				pd28.PropertyVarInfo =(  SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.cumIntRad);
+				pd28.PropertyName = "leafAge";
+				pd28.PropertyType =  (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.leafAge)).ValueType.TypeForCurrentValue;
+				pd28.PropertyVarInfo =(  SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.leafAge);
 				_outputs0_0.Add(pd28);
 				PropertyDescription pd29 = new PropertyDescription();
 				pd29.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLeafState);
-				pd29.PropertyName = "leafAge";
-				pd29.PropertyType =  (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.leafAge)).ValueType.TypeForCurrentValue;
-				pd29.PropertyVarInfo =(  SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.leafAge);
+				pd29.PropertyName = "exposedArea";
+				pd29.PropertyType =  (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.exposedArea)).ValueType.TypeForCurrentValue;
+				pd29.PropertyVarInfo =(  SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.exposedArea);
 				_outputs0_0.Add(pd29);
 				PropertyDescription pd30 = new PropertyDescription();
 				pd30.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLeafState);
-				pd30.PropertyName = "exposedArea";
-				pd30.PropertyType =  (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.exposedArea)).ValueType.TypeForCurrentValue;
-				pd30.PropertyVarInfo =(  SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.exposedArea);
+				pd30.PropertyName = "area";
+				pd30.PropertyType =  (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.area)).ValueType.TypeForCurrentValue;
+				pd30.PropertyVarInfo =(  SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.area);
 				_outputs0_0.Add(pd30);
-				PropertyDescription pd31 = new PropertyDescription();
-				pd31.DomainClassType = typeof(SiriusQualityMaizeLAI.MaizeLeafState);
-				pd31.PropertyName = "area";
-				pd31.PropertyType =  (( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.area)).ValueType.TypeForCurrentValue;
-				pd31.PropertyVarInfo =(  SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.area);
-				_outputs0_0.Add(pd31);
 				mo0_0.Outputs=_outputs0_0;
 				//Associated strategies
 				List<string> lAssStrat0_0 = new List<string>();
@@ -545,7 +539,6 @@ namespace SiriusQualityMaizeLAI.Strategies
 					SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.State.CurrentValue=maizeleafstate.State;
 					SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.PreviousState.CurrentValue=maizeleafstate.PreviousState;
 					SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.width.CurrentValue=maizeleafstate.width;
-					SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.isPrematurelyDying.CurrentValue=maizeleafstate.isPrematurelyDying;
 					SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.cumIntRad.CurrentValue=maizeleafstate.cumIntRad;
 					SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.leafAge.CurrentValue=maizeleafstate.leafAge;
 					SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.exposedArea.CurrentValue=maizeleafstate.exposedArea;
@@ -568,16 +561,14 @@ namespace SiriusQualityMaizeLAI.Strategies
 					if(r25.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.PreviousState.ValueType)){prc.AddCondition(r25);}
 					RangeBasedCondition r26 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.width);
 					if(r26.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.width.ValueType)){prc.AddCondition(r26);}
-					RangeBasedCondition r27 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.isPrematurelyDying);
-					if(r27.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.isPrematurelyDying.ValueType)){prc.AddCondition(r27);}
-					RangeBasedCondition r28 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.cumIntRad);
-					if(r28.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.cumIntRad.ValueType)){prc.AddCondition(r28);}
-					RangeBasedCondition r29 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.leafAge);
-					if(r29.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.leafAge.ValueType)){prc.AddCondition(r29);}
-					RangeBasedCondition r30 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.exposedArea);
-					if(r30.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.exposedArea.ValueType)){prc.AddCondition(r30);}
-					RangeBasedCondition r31 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.area);
-					if(r31.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.area.ValueType)){prc.AddCondition(r31);}
+					RangeBasedCondition r27 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.cumIntRad);
+					if(r27.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.cumIntRad.ValueType)){prc.AddCondition(r27);}
+					RangeBasedCondition r28 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.leafAge);
+					if(r28.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.leafAge.ValueType)){prc.AddCondition(r28);}
+					RangeBasedCondition r29 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.exposedArea);
+					if(r29.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.exposedArea.ValueType)){prc.AddCondition(r29);}
+					RangeBasedCondition r30 = new RangeBasedCondition(SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.area);
+					if(r30.ApplicableVarInfoValueTypes.Contains( SiriusQualityMaizeLAI.MaizeLeafStateVarInfo.area.ValueType)){prc.AddCondition(r30);}
 
 					
 

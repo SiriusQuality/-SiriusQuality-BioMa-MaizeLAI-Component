@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 /// 
-/// This class was created from file C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\XML\SiriusQualityMaizeLAI_MaizeLeafState.xml
+/// This class was created from file C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\XML\SiriusQualityMaizeLAI_MaizeLeafState.xml
 /// The tool used was: DCC - Domain Class Coder, http://components.biomamodelling.org/, DCC
 /// 
 /// Loic Manceau
@@ -17,7 +17,7 @@
 /// INRA
 /// 
 /// 
-/// 5/27/2019 4:53:37 PM
+/// 7/3/2019 1:07:11 PM
 /// 
 namespace SiriusQualityMaizeLAI
 {
@@ -62,8 +62,6 @@ namespace SiriusQualityMaizeLAI
         
         private System.Collections.Generic.List<int> _PreviousState = new List<int>();
         
-        private System.Collections.Generic.List<int> _isPrematurelyDying = new List<int>();
-        
         private System.Collections.Generic.List<double> _startEnlargeTT = new List<double>();
         
         private System.Collections.Generic.List<double> _stopEnlargeTT = new List<double>();
@@ -91,53 +89,59 @@ namespace SiriusQualityMaizeLAI
         {
             _parametersIO = new ParametersIO(this);
         }
+
         public MaizeLeafState(MaizeLeafState toCopy)
         {
-            System.Collections.Generic.List<int> _State = new List<int>(toCopy._State);
+            _State = new List<int>();
+            _liguleTT = new List<double>();
+            _fullyExpTT = new List<double>();
+            _GAI = new List<double>();
+            _length = new List<double>();
+            _width = new List<double>();
+            _fracPopn = new List<double>();
+            _startExpTT = new List<double>();
+            _baseWidth = new List<double>();
+            _area = new List<double>();
+            _coefLER = new List<double>();
+            _tipTT = new List<double>();
+            _exposedArea = new List<double>();
+            _PreviousState = new List<int>();
+            _startEnlargeTT = new List<double>();
+            _stopEnlargeTT = new List<double>();
+            _leafAge = new List<double>();
+            _cumIntRad = new List<double>();
+            _initialisationTT = new List<double>();
+            _deltaAI = new List<double>();
+            _LaminaAI = new List<double>();
+            _MaxAI = new List<double>();
 
-            System.Collections.Generic.List<double> _liguleTT = new List<double>(toCopy._liguleTT);
+            for (int ival = 0; ival < toCopy._LaminaAI.Count; ival++)
+            {
+                _State.Add(toCopy._State[ival]);
+                _liguleTT.Add(toCopy._liguleTT[ival]);
+                _fullyExpTT.Add(toCopy._fullyExpTT[ival]);
+                _GAI.Add(toCopy._GAI[ival]);
+                _length.Add(toCopy._length[ival]);
+                _width.Add(toCopy._width[ival]);
+                _fracPopn.Add(toCopy._fracPopn[ival]);
+                _startExpTT.Add(toCopy._startExpTT[ival]);
+                _baseWidth.Add(toCopy._baseWidth[ival]);
+                _area.Add(toCopy._area[ival]);
+                _coefLER.Add(toCopy._coefLER[ival]);
+                _tipTT.Add(toCopy._tipTT[ival]);
+                _exposedArea.Add(toCopy._exposedArea[ival]);
+                _PreviousState.Add(toCopy._PreviousState[ival]);
+                _startEnlargeTT.Add(toCopy._startEnlargeTT[ival]);
+                _stopEnlargeTT.Add(toCopy._stopEnlargeTT[ival]);
+                _leafAge.Add(toCopy._leafAge[ival]);
+                _cumIntRad.Add(toCopy._cumIntRad[ival]);
+                _initialisationTT.Add(toCopy._initialisationTT[ival]);
+                _deltaAI.Add(toCopy._deltaAI[ival]);
+                _LaminaAI.Add(toCopy._LaminaAI[ival]);
+                _MaxAI.Add(toCopy._MaxAI[ival]);
+            }
 
-            System.Collections.Generic.List<double> _fullyExpTT = new List<double>(toCopy._fullyExpTT);
 
-            System.Collections.Generic.List<double> _GAI = new List<double>(toCopy._GAI);
-
-            System.Collections.Generic.List<double> _length = new List<double>(toCopy._length);
-
-            System.Collections.Generic.List<double> _width = new List<double>(toCopy._width);
-
-            System.Collections.Generic.List<double> _fracPopn = new List<double>(toCopy._fracPopn);
-
-            System.Collections.Generic.List<double> _startExpTT = new List<double>(toCopy._startExpTT);
-
-            System.Collections.Generic.List<double> _baseWidth = new List<double>(toCopy._baseWidth);
-
-            System.Collections.Generic.List<double> _area = new List<double>(toCopy._area);
-
-            System.Collections.Generic.List<double> _coefLER = new List<double>(toCopy._coefLER);
-
-            System.Collections.Generic.List<double> _tipTT = new List<double>(toCopy._tipTT);
-
-            System.Collections.Generic.List<double> _exposedArea = new List<double>(toCopy._exposedArea);
-
-            System.Collections.Generic.List<int> _PreviousState = new List<int>(toCopy._PreviousState);
-
-            System.Collections.Generic.List<int> _isPrematurelyDying = new List<int>(toCopy._isPrematurelyDying);
-
-            System.Collections.Generic.List<double> _startEnlargeTT = new List<double>(toCopy._startEnlargeTT);
-
-            System.Collections.Generic.List<double> _stopEnlargeTT = new List<double>(toCopy._stopEnlargeTT);
-
-            System.Collections.Generic.List<double> _leafAge = new List<double>(toCopy._leafAge);
-
-            System.Collections.Generic.List<double> _cumIntRad = new List<double>(toCopy._cumIntRad);
-
-            System.Collections.Generic.List<double> _initialisationTT = new List<double>(toCopy._initialisationTT);
-
-            System.Collections.Generic.List<double> _deltaAI = new List<double>(toCopy._deltaAI);
-
-            System.Collections.Generic.List<double> _LaminaAI = new List<double>(toCopy._LaminaAI);
-
-            System.Collections.Generic.List<double> _MaxAI = new List<double>(toCopy._MaxAI);
         }
 
         #endregion
@@ -325,19 +329,6 @@ namespace SiriusQualityMaizeLAI
             }
         }
         
-        /// <summary>Flag</summary>
-        public System.Collections.Generic.List<int> isPrematurelyDying
-        {
-            get
-            {
-                return this._isPrematurelyDying;
-            }
-            set
-            {
-                this._isPrematurelyDying = value;
-            }
-        }
-        
         /// <summary>Begining of leaf width extension</summary>
         public System.Collections.Generic.List<double> startEnlargeTT
         {
@@ -489,7 +480,6 @@ namespace SiriusQualityMaizeLAI
             _tipTT = new List<double>();
             _exposedArea = new List<double>();
             _PreviousState = new List<int>();
-            _isPrematurelyDying = new List<int>();
             _startEnlargeTT = new List<double>();
             _stopEnlargeTT = new List<double>();
             _leafAge = new List<double>();

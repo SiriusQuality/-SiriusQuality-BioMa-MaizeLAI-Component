@@ -128,10 +128,6 @@
     <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
   </Outputs>
   <Outputs>
-    <Variable>isPrematurelyDying</Variable>
-    <DomainClass>maizeleafstate - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
-  </Outputs>
-  <Outputs>
     <Variable>cumIntRad</Variable>
     <DomainClass>maizeleafstate1 - SiriusQualityMaizeLAI.MaizeLeafState</DomainClass>
   </Outputs>

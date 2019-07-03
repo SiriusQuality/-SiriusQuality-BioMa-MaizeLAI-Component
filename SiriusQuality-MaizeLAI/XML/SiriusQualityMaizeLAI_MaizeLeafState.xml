@@ -173,16 +173,6 @@
     <URL>http://</URL>
   </VarInfoVariables>
   <VarInfoVariables>
-    <Name>isPrematurelyDying</Name>
-    <MinValue>0</MinValue>
-    <MaxValue>1</MaxValue>
-    <DefaultValue>0</DefaultValue>
-    <Units>dimensionless</Units>
-    <Type>List&lt;int&gt;</Type>
-    <Description>Flag</Description>
-    <URL>http://</URL>
-  </VarInfoVariables>
-  <VarInfoVariables>
     <Name>startEnlargeTT</Name>
     <MinValue>0</MinValue>
     <MaxValue>10000</MaxValue>

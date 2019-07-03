@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 /// 
-/// This class was created from file C:\Users\mancealo\Documents\DesktopBU\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\XML\SiriusQualityMaizeLAI_MaizeLeafState.xml
+/// This class was created from file C:\Users\mancealo\Documents\GitSiriusCode\Sirius-BioMa-MaizePotentialLAI-Component\SiriusQuality-MaizeLAI\XML\SiriusQualityMaizeLAI_MaizeLeafState.xml
 /// The tool used was: DCC - Domain Class Coder, http://components.biomamodelling.org/, DCC
 /// 
 /// Loic Manceau
@@ -17,7 +17,7 @@
 /// INRA
 /// 
 /// 
-/// 5/27/2019 4:53:37 PM
+/// 7/3/2019 1:07:11 PM
 /// 
 namespace SiriusQualityMaizeLAI
 {
@@ -57,8 +57,6 @@ namespace SiriusQualityMaizeLAI
         static VarInfo _exposedArea = new VarInfo();
         
         static VarInfo _PreviousState = new VarInfo();
-        
-        static VarInfo _isPrematurelyDying = new VarInfo();
         
         static VarInfo _startEnlargeTT = new VarInfo();
         
@@ -236,15 +234,6 @@ namespace SiriusQualityMaizeLAI
             get
             {
                 return  _PreviousState;
-            }
-        }
-        
-        /// <summary>Flag</summary>
-        public static  VarInfo isPrematurelyDying
-        {
-            get
-            {
-                return  _isPrematurelyDying;
             }
         }
         
@@ -451,15 +440,6 @@ namespace SiriusQualityMaizeLAI
             _PreviousState.Units = "dimensionless";
             _PreviousState.URL = "http://";
             _PreviousState.ValueType = VarInfoValueTypes.GetInstanceForName("ListInteger");
-            //   
-            _isPrematurelyDying.Name = "isPrematurelyDying";
-            _isPrematurelyDying.Description = "Flag";
-            _isPrematurelyDying.MaxValue = 1D;
-            _isPrematurelyDying.MinValue = 0D;
-            _isPrematurelyDying.DefaultValue = 0D;
-            _isPrematurelyDying.Units = "dimensionless";
-            _isPrematurelyDying.URL = "http://";
-            _isPrematurelyDying.ValueType = VarInfoValueTypes.GetInstanceForName("ListInteger");
             //   
             _startEnlargeTT.Name = "startEnlargeTT";
             _startEnlargeTT.Description = "Begining of leaf width extension";

@@ -62,8 +62,6 @@ namespace SiriusQuality_MaizeLAIConsole
             return list;
         }
 
-        public List<int> getIsPrematurelyDyingList(){ return maizeLeafState_.isPrematurelyDying; }
-
         public double getPotentialIncDeltaArea(){ return maizeLaiState_.potentialIncDeltaArea; }
 
         public double LER { get { return maizeLaiState_.LER; } }
@@ -253,7 +251,6 @@ namespace SiriusQuality_MaizeLAIConsole
             maizeLeafState_.tipTT.Add(0.0);
             maizeLeafState_.exposedArea.Add(0.0);
             maizeLeafState_.PreviousState.Add(0);
-            maizeLeafState_.isPrematurelyDying.Add(0);
             maizeLeafState_.leafAge.Add(0.0);
             maizeLeafState_.cumIntRad.Add(0.0);
             maizeLeafState_.initialisationTT.Add(0.0);
